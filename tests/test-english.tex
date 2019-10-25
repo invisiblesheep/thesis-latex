@@ -1,0 +1,71 @@
+% test document for gitlab ci tests
+
+\documentclass[a4paper,12pt,language=english]{utuftthesis}
+
+% how many levels of section numbering
+\setcounter{secnumdepth}{2}
+
+% how many levels of section numbering in the TOC
+\setcounter{tocdepth}{2}
+
+\usepackage{blindtext}
+% suppress complaints about missing finnish blabla
+\pretocmd{\blindtext}{\selectlanguage{english}}{}{}
+\pretocmd{\Blindtext}{\selectlanguage{english}}{}{}
+
+\addbibresource{Bibliografia.bib}
+
+\pubyear{2018}
+\pubmonth{6}
+\publab{Laboratory Name}
+\pubtype{tkk}
+\supervisors{aa 123,bb 234,cc 345}
+\title{Name of Thesis}
+\author{My Name}
+\keywords{here, a, list, of, keywords}
+
+\begin{document}
+\maketitle
+\begin{abstract}\blindtext\end{abstract}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Johdanto}
+\Blindtext
+Viitataan tähän \cite{crawley2007write}.
+
+\chapter{Väliluku 1}
+\Blindtext
+
+\chapter{Väliluku 2}
+\section{foobar}
+\Blindtext
+
+\chapter{Väliluku 3}
+\section{foobar}
+\Blindtext
+\section{foobar}
+\Blindtext
+
+\chapter{Väliluku 4}
+\section{foobar}
+\Blindtext
+
+\chapter{Väliluku 5}
+\Blindtext
+
+\chapter{Väliluku 6}
+\Blindtext
+
+\chapter{Lopuksi}
+
+\blindtext
+
+\printbibliography
+
+\appchapter{Liitedokumentti}
+\Blindtext
+
+\end{document}

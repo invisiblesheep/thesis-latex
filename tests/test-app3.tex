@@ -1,0 +1,44 @@
+% test document for gitlab ci tests
+
+\documentclass[a4paper,12pt,language=finnish]{utuftthesis}
+
+% how many levels of section numbering
+\setcounter{secnumdepth}{2}
+
+% how many levels of section numbering in the TOC
+\setcounter{tocdepth}{2}
+
+\usepackage{blindtext}
+% suppress complaints about missing finnish blabla
+\pretocmd{\blindtext}{\selectlanguage{english}}{}{}
+\pretocmd{\Blindtext}{\selectlanguage{english}}{}{}
+
+\addbibresource{Bibliografia.bib}
+
+\pubyear{2018}
+\pubmonth{6}
+\publab{Labran nimi}
+\pubtype{tkk}
+\title{Tutkielma}
+\author{Oma nimi}
+\keywords{tähän, lista, avainsanoista}
+
+\begin{document}
+\maketitle
+\begin{abstract}\blindtext\end{abstract}
+
+\tableofcontents
+
+\chapter{Johdanto}
+\blindtext
+Viitataan tähän \cite{crawley2007write}.
+
+\chapter{Lopuksi}
+\blindtext
+
+\printbibliography
+
+\appchapter{Liitedokumentti}
+sivu 1
+
+\end{document}
