@@ -1,29 +1,12 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {finnish}{}
-\babel@toc {finnish}{}
-\babel@toc {finnish}{}
-\babel@toc {finnish}{}
-\babel@toc {finnish}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
-\babel@toc {finnish}{}
-\babel@toc {finnish}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Johdanto}{1}
+\contentsline {chapter}{\numberline {1}Introduction}{1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Alaotsikko}{1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}Alempiotsikko}{3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Alinotsikko, joka ei n\IeC {\"a}y sis\IeC {\"a}llysluettelossa}{3}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Otsikko tekstiss\IeC {\"a}, joka ei n\IeC {\"a}y sis\IeC {\"a}llysluettelossa}{3}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Toisen luvun otsikko}{4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Liitteet}{}\relax 
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Liitedokumentti}{A-1}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Liitedokumentti 2}{B-1}
+\contentsline {chapter}{\numberline {2}Second chapter label}{2}% 
+\babel@toc {english}{}

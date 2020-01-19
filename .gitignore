@@ -1,2 +1,4 @@
 *.lyx
 *.log
+*.aux
+*.swp
