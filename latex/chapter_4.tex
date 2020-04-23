@@ -1,0 +1,61 @@
+\chapter{Medical report document classification} \label{Medical report document classification}
+
+\section{Problem} \label{Problem}
+The challenge was to classify medical reports based on their diagnosis codes.
+The motivation for this was to first to define the feasability and current state of deep learning for automatic text classification of medical text.
+Second, to build a easy to use framework of sorts for the hospital to train more classifiers for different diagnosis codes.
+
+A binary classifier was built to identify two knee-related diagnosis codes from the training data.
+Since compute resources was a major constraint, only approaches with a reasonable single-gpu training time were considered.
+Thus, ULMFiT, a small ELECTRA model, and a finetuned FinBERT, pretrained by Virtanen et al. \cite{virtanen2019}, were chosen for comparison.
+
+\section{Data} \label{Data}
+The data for the work was provided by (VSSHP/Auria/TYKS).
+It consisted of doctor's statements with corresponding diagnosis codes and other metadata such as date of visit and (toimipiste).
+Additionally, since receiving access to the actual medical data took some time, the chosen models and code were trained and tested on some general finnish data from various news agencies and open online forums compiled by Virtanen et al. for FinBERT \cite{virtanen2019}.
+
+\subsection{General Finnish} \label{General Finnish}
+The general finnish corpus is composed from three different sources: news articles, online discussions, and documents crawled from the Finnish internet.
+It consists of 3.3 billion tokens from 234 million sentences.
+The total size of the corpus is roughly 30 times the size of the Finnish Wikipedia.
+-- TELL ABOUT PREPROCESSING --
+
+\subsection{Clinical data} \label{Clinical data}
+-- GET DATA FOR CLINICAL, TOKENS AND SENTENCES --
+-- TELL ABOUT PREPROCESSING --
+
+\section{Compute resources} \label{Compute resources}
+The models were trained on
+Compute resources for the project were provided by (VSSHP/Auria/Tyks) for the medical models and CSC for the general finnish models.
+
+\subsection{CSC Puhti} \label{CSC Puhti}
+CSC (IT Center for Science Ltd.) is a non-profit state enterprise owned by the Finnish state and higher education institutions in Finland.
+It offers compute resources for scientific purposes to universities and upkeeps the FUNET network, which is the Finnish national research and education network.
+CSC operates two supercomputers, namely Taito and Puhti, and is working on a new supercomputer, Mahti, that is scheduled to open for use some time in 2020.
+For this project, Puhti was chosen since it provides an "artificial intelligence partition" with access to GPU nodes with multiple Nvidia V100 graphics cards.
+
+\subsection{VSSHP Blackbird} \label{VSSHP Blackbird}
+For this project access was granted to Blackbird, a computer for artificial intelligence owned by (AURIA/TYKS/VSSHP?) that has four Nvidia V100 graphics cards allowing the simultaneous training of multiple models.
+Although the architecture could have managed training a medium-sized BERT, it was considered too long of a task to reserve the compute resources for.
+
+-- TABLE OF TRAINING TIMES FOR DIFFERENT MODELS, PRETRAINING AND FINETUNING, OMIT FINBERT PRETRAINING TIME SINCE ALREADY PRETRAINED --
+
+\section{Results} \label{Results}
+
+-- RESULT TABLE WITH: --
+-- Acc, precision, f1 --
+-- FOR:--
+-- ULMFIT 30K, 50K, 100K --
+-- ELECTRA 30K, 50K, 100K --
+-- FinBERT with original vocab of 50K --
+
+\section{Discussion}\label{Discussion}
+-- BLAH BLAH --
+-- SURPRISING RESULTS FROM ULMFIT WRT THE PERFORMANCE OF ELECTRA --
+-- FINBERT IS OKAY THOUGH MODELS TRAINED ON THE ACTUAL DATA PERFORM BETTER --
+-- ELECTRA SEEMS PROMISING --
+-- FUTURE WORK COULD INCLUDE PRETRAINING ON A LARGER CORPUS OF GENERAL MEDICAL TEXT FIRST, THEN FINETUNE TO TASK --
+
+% \subsection{ULMFiT} \label{ULMFiT}
+% \subsection{ELECTRA} \label{ELECTRA}
+% \subsection{FinBERT} \label{FinBERT}

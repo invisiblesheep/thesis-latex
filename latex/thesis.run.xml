@@ -82,7 +82,7 @@
       <file>thesis.bcf</file>
     </requires>
     <requires type="editable">
-      <file>Bibliografia.bib</file>
+      <file>Bibli_zotero.bib</file>
     </requires>
   </external>
 </requests>

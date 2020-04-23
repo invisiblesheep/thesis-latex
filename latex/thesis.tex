@@ -2,7 +2,8 @@
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
 
-\addbibresource{Bibliografia.bib}
+\addbibresource{Bibli_zotero.bib}
+\graphicspath{ {./images/} }
 \begin{document}
 \begin{comment}
 Document template suitable for use as a LaTeX master-file for master's
@@ -70,7 +71,7 @@ Relies on utuftthesis.cls for the document class definitions.
 
 \pubmonth{4}
 
-\publaben{Laboratory Name}
+\publaben{Computer Science}
 
 \pubtype{gradu}
 \title{Transfer learning in medical report classification..}
@@ -95,8 +96,8 @@ Relies on utuftthesis.cls for the document class definitions.
 % 'list of acronyms'
 %   - you may not need this at all
 %   - create a chapter called List Of Acronyms (or whatever), which
-%     should contain all your acronym definitions, e.g. 
-%     \chapter{List Of Acronyms} 
+%     should contain all your acronym definitions, e.g.
+%     \chapter{List Of Acronyms}
 %   - the secnumdepth trickery is needed because acronyms are as a
 %     standard chapter and we are faking '\listofacronyms'
 %
@@ -104,7 +105,11 @@ Relies on utuftthesis.cls for the document class definitions.
 %\input{your acronym chapter's file name}
 %\setcounter{secnumdepth}{2}% setup page numbering, page counter, etc.%
 
-\input{introduction.tex}\input{second.tex}
+\input{introduction.tex}
+\input{chapter_2.tex}
+\input{chapter_3.tex}
+\input{chapter_4.tex}
+\input{conclusion.tex}
 
 %\input{file_name_of_chapter_x}
 %\input{file_name_of_chapter_y}
