@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.25)  23 APR 2020 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.25)  25 APR 2020 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,6 +607,58 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count315
+\calc@Bcount=\count316
+\calc@Adimen=\dimen135
+\calc@Bdimen=\dimen136
+\calc@Askip=\skip80
+\calc@Bskip=\skip81
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count317
+\calc@Cskip=\skip82
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count318
+\l_MT_multwidth_dim=\dimen137
+\origjot=\skip83
+\l_MT_shortvdotswithinadjustabove_dim=\dimen138
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen139
+\l_MT_above_intertext_sep=\dimen140
+\l_MT_below_intertext_sep=\dimen141
+\l_MT_above_shortintertext_sep=\dimen142
+\l_MT_below_shortintertext_sep=\dimen143
+)
+\l_EQ_equationtype_int=\count319
+\l_EQ_alignmentmode_int=\count320
+\l_EQ_totalwidth_dim=\dimen144
+\l_EQ_displaywidth_dim=\dimen145
+\l_EQ_temp_linewidth_dim=\dimen146
+\EmphEqdelimitershortfall=\dimen147
+\EmphEqdelimiterfactor=\count321
+\g_EQ_toptag_height_dim=\dimen148
+\g_EQ_bottomtag_depth_dim=\dimen149
+\g_EQ_toprow_height_dim=\dimen150
+\g_EQ_bottomrow_depth_dim=\dimen151
+\g_EQ_widesttag_dim=\dimen152
+\EQ_mathdisplay_box=\box33
+\EQ_tag_box=\box34
+\g_EQ_temprow_int=\count322
+)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/datetime2/datetime2.sty
 Package: datetime2 2018/07/20 v1.5.3 (NLCT) date and time formats
 
@@ -629,11 +681,11 @@ tling Caps
 (/usr/local/texlive/2019/texmf-dist/tex/latex/ifnextok/ifnextok.sty
 Package: ifnextok 2011/06/27 v0.3 test next token (UL)
 )
-\c@lcword@index=\count315
-\c@word@count=\count316
-\c@lc@words=\count317
-\c@dia@count=\count318
-\c@arg@@@index=\count319
+\c@lcword@index=\count323
+\c@word@count=\count324
+\c@lc@words=\count325
+\c@dia@count=\count326
+\c@arg@@@index=\count327
 ))
 
 Package biblatex Warning: File 'english-ieee.lbx' not found!
@@ -649,7 +701,17 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `ULMFiT' multiply defined.
+
+
+LaTeX Warning: Label `ELECTRA' multiply defined.
+
+
+LaTeX Warning: Label `BERT' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -670,16 +732,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen135
-\scratchbox=\box33
-\nofMPsegments=\count321
-\nofMParguments=\count322
+\scratchcounter=\count328
+\scratchdimen=\dimen153
+\scratchbox=\box35
+\nofMPsegments=\count329
+\nofMParguments=\count330
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen136
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen154
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
 \everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -712,7 +774,8 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 (./thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 7.
 Package biblatex Info: Reference segment=0 on input line 7.
-\c@lstlisting=\count326
+\c@lstlisting=\count334
+\Hy@linkcounter=\count335
  Excluding 'comment' comment.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 80.
 
@@ -791,105 +854,146 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 
 ]
 \relax  2.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
 [2
 
-] [3]
-<./images/svm.png, id=38, 411.5375pt x 272.01625pt>
-File: ./images/svm.png Graphic file (type png)
-<use ./images/svm.png>
-Package pdftex.def Info: ./images/svm.png  used on input line 59.
-(pdftex.def)             Requested size: 411.5365pt x 272.01558pt.
- [4]
-<./images/decision_tree.png, id=43, 150.3216pt x 139.84245pt>
-File: ./images/decision_tree.png Graphic file (type png)
-<use ./images/decision_tree.png>
-Package pdftex.def Info: ./images/decision_tree.png  used on input line 77.
-(pdftex.def)             Requested size: 300.64243pt x 279.6842pt.
- [5 <./images/svm.png>] [6 <./images/decision_tree.png>]
-<./images/nn.png, id=53, 432.61626pt x 422.57875pt>
-File: ./images/nn.png Graphic file (type png)
-<use ./images/nn.png>
-Package pdftex.def Info: ./images/nn.png  used on input line 95.
-(pdftex.def)             Requested size: 259.57176pt x 253.5492pt.
- [7 <./images/nn.png>]) (./chapter_3.tex [8]
-\relax  3.
-[9
-
 ]
-<./images/skipgram.png, id=65, 432.61626pt x 444.66125pt>
-File: ./images/skipgram.png Graphic file (type png)
-<use ./images/skipgram.png>
-Package pdftex.def Info: ./images/skipgram.png  used on input line 35.
-(pdftex.def)             Requested size: 259.57176pt x 266.7988pt.
- [10] [11 <./images/skipgram.png>] [12]
-Overfull \hbox (3.18585pt too wide) in paragraph at lines 84--85
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+ [3]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 37.
+ [4] [5]
+Overfull \hbox (7.18181pt too wide) in paragraph at lines 99--103
 []\T1/ptm/m/n/12 Compared to whole word to-k-eniza-tion, Sen-ten-ce-Piece's sub
 -word to-k-eniza-tion achieves
  []
 
-[13]
-<./images/rnnloop.png, id=79, 176.66pt x 261.97874pt>
+[6] [7]
+<./images/svm.png, id=50, 411.5375pt x 272.01625pt>
+File: ./images/svm.png Graphic file (type png)
+<use ./images/svm.png>
+Package pdftex.def Info: ./images/svm.png  used on input line 151.
+(pdftex.def)             Requested size: 411.5365pt x 272.01558pt.
+ [8]
+<./images/decision_tree.png, id=56, 629.35126pt x 513.92pt>
+File: ./images/decision_tree.png Graphic file (type png)
+<use ./images/decision_tree.png>
+Package pdftex.def Info: ./images/decision_tree.png  used on input line 169.
+(pdftex.def)             Requested size: 314.67485pt x 256.95937pt.
+ [9 <./images/svm.png>] [10 <./images/decision_tree.png>]
+<./images/nn.png, id=66, 432.61626pt x 422.57875pt>
+File: ./images/nn.png Graphic file (type png)
+<use ./images/nn.png>
+Package pdftex.def Info: ./images/nn.png  used on input line 190.
+(pdftex.def)             Requested size: 259.57176pt x 253.5492pt.
+ [11 <./images/nn.png>] [12]
+<./images/confusionmatrix.png, id=74, 494.84875pt x 304.13625pt>
+File: ./images/confusionmatrix.png Graphic file (type png)
+<use ./images/confusionmatrix.png>
+Package pdftex.def Info: ./images/confusionmatrix.png  used on input line 223.
+(pdftex.def)             Requested size: 296.91154pt x 182.48315pt.
+ [13 <./images/confusionmatrix.png>]) (./chapter_3.tex
+[14]
+\relax  3.
+[15
+
+] [16]
+<./images/skipgram.png, id=89, 432.61626pt x 444.66125pt>
+File: ./images/skipgram.png Graphic file (type png)
+<use ./images/skipgram.png>
+Package pdftex.def Info: ./images/skipgram.png  used on input line 47.
+(pdftex.def)             Requested size: 259.57176pt x 266.7988pt.
+ [17] [18 <./images/skipgram.png>] [19] [20] [21]
+<./images/rnnloop.png, id=107, 176.66pt x 261.97874pt>
 File: ./images/rnnloop.png Graphic file (type png)
 <use ./images/rnnloop.png>
-Package pdftex.def Info: ./images/rnnloop.png  used on input line 110.
+Package pdftex.def Info: ./images/rnnloop.png  used on input line 169.
 (pdftex.def)             Requested size: 123.66115pt x 183.38387pt.
- [14 <./images/rnnloop.png>] [15]
-<./images/rnn.png, id=88, 1154.3125pt x 372.39125pt>
+ [22]
+<./images/rnn.png, id=111, 1154.3125pt x 372.39125pt>
 File: ./images/rnn.png Graphic file (type png)
 <use ./images/rnn.png>
-Package pdftex.def Info: ./images/rnn.png  used on input line 126.
+Package pdftex.def Info: ./images/rnn.png  used on input line 191.
 (pdftex.def)             Requested size: 461.71683pt x 148.95386pt.
 
-Overfull \hbox (34.92548pt too wide) in paragraph at lines 126--128
+Overfull \hbox (34.92548pt too wide) in paragraph at lines 191--193
  [][] 
  []
 
-
-Overfull \hbox (1.38846pt too wide) in paragraph at lines 144--147
+[23 <./images/rnnloop.png>]
+Overfull \hbox (1.38846pt too wide) in paragraph at lines 205--208
 \T1/ptm/m/n/12 Long short-term mem-ory (LSTM) is a re-cur-rent net-work ar-chi-
 tec-ture pro-posed by Hochre-
  []
 
-[16 <./images/rnn.png>]
-<./images/lstm.png, id=93, 1154.3125pt x 372.39125pt>
+<./images/lstm.png, id=116, 1154.3125pt x 372.39125pt>
 File: ./images/lstm.png Graphic file (type png)
 <use ./images/lstm.png>
-Package pdftex.def Info: ./images/lstm.png  used on input line 159.
+Package pdftex.def Info: ./images/lstm.png  used on input line 210.
 (pdftex.def)             Requested size: 461.71683pt x 148.95386pt.
 
-Overfull \hbox (34.92548pt too wide) in paragraph at lines 159--161
+Overfull \hbox (34.92548pt too wide) in paragraph at lines 210--212
  [][] 
  []
 
-<./images/gru.png, id=94, 400.49625pt x 372.39125pt>
+[24 <./images/rnn.png>] [25 <./images/lstm.png>]
+<./images/gru.png, id=125, 400.49625pt x 372.39125pt>
 File: ./images/gru.png Graphic file (type png)
 <use ./images/gru.png>
-Package pdftex.def Info: ./images/gru.png  used on input line 169.
+Package pdftex.def Info: ./images/gru.png  used on input line 232.
 (pdftex.def)             Requested size: 160.19566pt x 148.95386pt.
-[17] [18 <./images/lstm.png> <./images/gru.png>]
-<./images/transformer.png, id=103, 783.92876pt x 1051.93pt>
+ [26 <./images/gru.png>]
+<./images/transformer.png, id=131, 783.92876pt x 1051.93pt>
 File: ./images/transformer.png Graphic file (type png)
 <use ./images/transformer.png>
-Package pdftex.def Info: ./images/transformer.png  used on input line 192.
+Package pdftex.def Info: ./images/transformer.png  used on input line 255.
 (pdftex.def)             Requested size: 313.56595pt x 420.76454pt.
- [19] [20 <./images/transformer.png>] [21] [22] [23] [24] [25]) (./chapter_4.te
-x [26]
-\relax  4.
-[27
 
-] [28]) (./conclusion.tex [29]
+[27 <./images/transformer.png>] [28] [29]
+<./images/autoencoder.png, id=142, 340.27126pt x 375.4025pt>
+File: ./images/autoencoder.png Graphic file (type png)
+<use ./images/autoencoder.png>
+Package pdftex.def Info: ./images/autoencoder.png  used on input line 310.
+(pdftex.def)             Requested size: 204.16432pt x 225.24323pt.
+ [30 <./images/autoencoder.png>]
+<./images/cnn.png, id=147, 1006.76125pt x 517.935pt>
+File: ./images/cnn.png Graphic file (type png)
+<use ./images/cnn.png>
+Package pdftex.def Info: ./images/cnn.png  used on input line 341.
+(pdftex.def)             Requested size: 402.69736pt x 207.17032pt.
+
+[31 <./images/cnn.png>] [32] [33] [34]) (./chapter_4.tex [35]
+\relax  4.
+[36
+
+] [37] [38]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 73.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 73.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 73.
+ [39] [40]) (./conclusion.tex
+Overfull \hbox (3.73328pt too wide) in paragraph at lines 100--1
+[]\T1/ptm/m/n/12 -- SUR-PRIS-ING RE-SULTS FROM ULM-FIT WRT THE PER-FOR-MANCE OF
+ ELEC-
+ []
+
+
+Overfull \hbox (2.51112pt too wide) in paragraph at lines 100--1
+\T1/ptm/m/n/12 TURE WORK COULD IN-CLUDE PRE-TRAIN-ING ON A LARGER COR-PUS OF GE
+N-
+ []
+
+[41]
 \relax  5.
-) [30
+) [42
 
 ]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 117.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [31
+) [43
 
 ]
 Overfull \hbox (0.64046pt too wide) in paragraph at lines 117--117
@@ -897,25 +1001,71 @@ Overfull \hbox (0.64046pt too wide) in paragraph at lines 117--117
 ion Trees Clas-si-fiers^^VA
  []
 
-[32] [33]
+
+Overfull \hbox (8.1554pt too wide) in paragraph at lines 117--117
+\T1/ptm/m/it/12 (LREC'16)\T1/ptm/m/n/12 , Por-toroº, Slove-nia: Eu-ro-pean Lan-
+guage Re-sources As-so-ci-a-tion (ELRA),
+ []
+
+[44]
+Overfull \hbox (32.95114pt too wide) in paragraph at lines 117--117
+[]\T1/ptm/m/n/12 D. P. Kingma and J. Ba, ^^P  Adam: A Method for Stochas-tic Op
+-ti-miza-tion^^Q, \T1/ptm/m/it/12 arXiv:1412.6980
+ []
+
+[45] [46]
+Overfull \hbox (7.13614pt too wide) in paragraph at lines 117--117
+[]\T1/ptm/m/n/12 D. P. Kingma and M. Welling, ^^P  Auto-Encoding Vari-a-tional 
+Bayes^^Q, \T1/ptm/m/it/12 arXiv:1312.6114
+ []
+
+
+Overfull \hbox (1.22568pt too wide) in paragraph at lines 117--117
+\T1/ptm/m/n/12 ing^^Q, \T1/ptm/m/it/12 arXiv:1511.06038 [cs, stat]\T1/ptm/m/n/1
+2 , Jun. 2016. arXiv: $\T1/pcr/m/n/12 1511 . 06038$ [cs, stat]\T1/ptm/m/n/12 . 
+
+ []
+
+
 Overfull \hbox (48.19304pt too wide) in paragraph at lines 117--117
 \T1/ptm/m/n/12 Bridg-ing the gap be-tween hu-man and ma-chine trans-la-tion^^Q,
  \T1/ptm/m/it/12 arXiv preprint arXiv:1609.08144\T1/ptm/m/n/12 ,
  []
 
-[34] [35] (./thesis.aux)
+[47]
+Overfull \hbox (48.66039pt too wide) in paragraph at lines 117--117
+[]\T1/ptm/m/it/12 Slurm Work-load Man-ager - Doc-u-men-ta-tion\T1/ptm/m/n/12 , 
+https://slurm.schedmd.com/documentation.html. 
+ []
+
+
+Overfull \hbox (61.91988pt too wide) in paragraph at lines 117--117
+[]\T1/ptm/m/it/12 Slurm Work-load Man-ager - Quick Start User Guide\T1/ptm/m/n/
+12 , https://slurm.schedmd.com/quickstart.html. 
+ []
+
+
+Overfull \hbox (1.41353pt too wide) in paragraph at lines 117--117
+[]\T1/ptm/m/it/12 Gnu.org\T1/ptm/m/n/12 , en, https://www.gnu.org/software/scre
+en/, Li-brary Cat-a-log: www.gnu.org. 
+ []
+
+[48] (./thesis.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16282 strings out of 492616
- 288826 string characters out of 6129480
- 725370 words of memory out of 5000000
- 19906 multiletter control sequences out of 15000+600000
- 48313 words of font info for 54 fonts, out of 8000000 for 9000
+ 17167 strings out of 492616
+ 305559 string characters out of 6129480
+ 745279 words of memory out of 5000000
+ 20762 multiletter control sequences out of 15000+600000
+ 65788 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,11n,50p,1451b,3564s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,11n,49p,1794b,3587s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/201
 9/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-di
@@ -931,10 +1081,10 @@ c/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/u
 rw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times
 /utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (40 pages, 362598 bytes).
+Output written on thesis.pdf (53 pages, 478299 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
+ 254 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

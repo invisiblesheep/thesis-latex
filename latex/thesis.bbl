@@ -19,37 +19,37 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{sebastiani2002}{article}{}
+    \entry{goldberg2017}{article}{}
       \name{author}{1}{}{%
-        {{hash=702180e4afc7fef6f2f45cd761a12c1f}{%
-           family={Sebastiani},
-           familyi={S\bibinitperiod},
-           given={Fabrizio},
-           giveni={F\bibinitperiod}}}%
+        {{hash=33b00f3e2f4f1bb310f1cf8d4a4c500a}{%
+           family={Goldberg},
+           familyi={G\bibinitperiod},
+           given={Yoav},
+           giveni={Y\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {ACM New York, NY, USA}%
+        {Morgan \& Claypool Publishers}%
       }
-      \strng{namehash}{702180e4afc7fef6f2f45cd761a12c1f}
-      \strng{fullhash}{702180e4afc7fef6f2f45cd761a12c1f}
-      \strng{bibnamehash}{702180e4afc7fef6f2f45cd761a12c1f}
-      \strng{authorbibnamehash}{702180e4afc7fef6f2f45cd761a12c1f}
-      \strng{authornamehash}{702180e4afc7fef6f2f45cd761a12c1f}
-      \strng{authorfullhash}{702180e4afc7fef6f2f45cd761a12c1f}
+      \strng{namehash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
+      \strng{fullhash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
+      \strng{bibnamehash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
+      \strng{authorbibnamehash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
+      \strng{authornamehash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
+      \strng{authorfullhash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{isbn}{0360-0300}
-      \field{journaltitle}{ACM computing surveys (CSUR)}
+      \field{isbn}{1947-4040}
+      \field{journaltitle}{Synthesis Lectures on Human Language Technologies}
       \field{number}{1}
-      \field{title}{Machine Learning in Automated Text Categorization}
-      \field{volume}{34}
-      \field{year}{2002}
-      \field{pages}{1\bibrangedash 47}
-      \range{pages}{47}
+      \field{title}{Neural Network Methods for Natural Language Processing}
+      \field{volume}{10}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 309}
+      \range{pages}{309}
       \verb{file}
-      \verb /Users/tuomas/Zotero/storage/IC9YMUY7/Sebastiani_2002_Machine learning in automated text categorization.pdf
+      \verb /Users/tuomas/Zotero/storage/DXXCKNNQ/Goldberg_2017_Neural network methods for natural language processing.pdf
       \endverb
     \endentry
     \entry{howard2018}{article}{}
@@ -182,6 +182,78 @@
       \verb /Users/tuomas/Zotero/storage/U4KCLSVT/Hotho et al. - A Brief Survey of Text Mining.pdf
       \endverb
     \endentry
+    \entry{sebastiani2002}{article}{}
+      \name{author}{1}{}{%
+        {{hash=702180e4afc7fef6f2f45cd761a12c1f}{%
+           family={Sebastiani},
+           familyi={S\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{702180e4afc7fef6f2f45cd761a12c1f}
+      \strng{fullhash}{702180e4afc7fef6f2f45cd761a12c1f}
+      \strng{bibnamehash}{702180e4afc7fef6f2f45cd761a12c1f}
+      \strng{authorbibnamehash}{702180e4afc7fef6f2f45cd761a12c1f}
+      \strng{authornamehash}{702180e4afc7fef6f2f45cd761a12c1f}
+      \strng{authorfullhash}{702180e4afc7fef6f2f45cd761a12c1f}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0360-0300}
+      \field{journaltitle}{ACM computing surveys (CSUR)}
+      \field{number}{1}
+      \field{title}{Machine Learning in Automated Text Categorization}
+      \field{volume}{34}
+      \field{year}{2002}
+      \field{pages}{1\bibrangedash 47}
+      \range{pages}{47}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/IC9YMUY7/Sebastiani_2002_Machine learning in automated text categorization.pdf
+      \endverb
+    \endentry
+    \entry{kudo2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ea1d04e9781edc1ab4ccafb0d8ff5179}{%
+           family={Kudo},
+           familyi={K\bibinitperiod},
+           given={Taku},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4398933b4ac4c83329c4fd6f1a079eef}{%
+           family={Richardson},
+           familyi={R\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{da0878991af2083992357c0b93024f16}
+      \strng{fullhash}{da0878991af2083992357c0b93024f16}
+      \strng{bibnamehash}{da0878991af2083992357c0b93024f16}
+      \strng{authorbibnamehash}{da0878991af2083992357c0b93024f16}
+      \strng{authornamehash}{da0878991af2083992357c0b93024f16}
+      \strng{authorfullhash}{da0878991af2083992357c0b93024f16}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper describes SentencePiece, a language-independent subword tokenizer and detokenizer designed for Neural-based text processing, including Neural Machine Translation. It provides open-source C++ and Python implementations for subword units. While existing subword segmentation tools assume that the input is pre-tokenized into word sequences, SentencePiece can train subword models directly from raw sentences, which allows us to make a purely end-to-end and language independent system. We perform a validation experiment of NMT on English-Japanese machine translation, and find that it is possible to achieve comparable accuracy to direct subword training from raw sentences. We also compare the performance of subword training and segmentation with various configurations. SentencePiece is available under the Apache 2 license at https://github.com/google/sentencepiece.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{arXiv:1808.06226 [cs]}
+      \field{month}{8}
+      \field{shorttitle}{{{SentencePiece}}}
+      \field{title}{{{SentencePiece}}: {{A}} Simple and Language Independent Subword Tokenizer and Detokenizer for {{Neural Text Processing}}}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1808.06226
+      \endverb
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/LY4YJAE7/Kudo and Richardson - 2018 - SentencePiece A simple and language independent s.pdf;/Users/tuomas/Zotero/storage/FV4F6RDY/1808.html
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
     \entry{rish}{article}{}
       \name{author}{1}{}{%
         {{hash=1ee28f96f8437f616774724895816584}{%
@@ -199,8 +271,8 @@
       \strng{authorbibnamehash}{1ee28f96f8437f616774724895816584}
       \strng{authornamehash}{1ee28f96f8437f616774724895816584}
       \strng{authorfullhash}{1ee28f96f8437f616774724895816584}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The naive Bayes classifier greatly simplify learning by assuming that features are independent given class. Although independence is generally a poor assumption, in practice naive Bayes often competes well with more sophisticated classifiers.}
@@ -233,8 +305,8 @@
       \strng{authorbibnamehash}{22926e07a4b25536b31dd868463dea36}
       \strng{authornamehash}{22926e07a4b25536b31dd868463dea36}
       \strng{authorfullhash}{22926e07a4b25536b31dd868463dea36}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Automatic Text Processing: {{Machine}} Learning Techniques}
@@ -307,8 +379,8 @@
       \strng{editorbibnamehash}{9620ff50c701843949cea2326b5967b0}
       \strng{editornamehash}{165b1cf7731a0b2f43cce7510d37a3ee}
       \strng{editorfullhash}{9620ff50c701843949cea2326b5967b0}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Machine {{Learning}}: {{ECML}}-98}
@@ -356,8 +428,8 @@
       \strng{authorbibnamehash}{87874e12399e714546eb45c775f5893d}
       \strng{authornamehash}{e2f3867543fd45b7a728533697f64977}
       \strng{authorfullhash}{87874e12399e714546eb45c775f5893d}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of machine learning research}
@@ -393,8 +465,8 @@
       \strng{authorbibnamehash}{3f8a5738fcd1cf547d921366c7d7e7a8}
       \strng{authornamehash}{3f8a5738fcd1cf547d921366c7d7e7a8}
       \strng{authorfullhash}{3f8a5738fcd1cf547d921366c7d7e7a8}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Decision Trees are considered to be one of the most popular approaches for representing classifiers. Researchers from various disciplines such as statistics, machine learning, pattern recognition, and data mining considered the issue of growing a decision tree from available data. This paper presents an updated survey of current methods for constructing decision tree classifiers in top-down manner. The paper suggests a unified algorithmic framework for presenting these algorithms and provides profound descriptions of the various splitting criteria and pruning methodology.}
@@ -514,8 +586,8 @@
       \strng{authorbibnamehash}{9e8511ef13d0cdda3a709b93fa650e71}
       \strng{authornamehash}{9e8511ef13d0cdda3a709b93fa650e71}
       \strng{authorfullhash}{9e8511ef13d0cdda3a709b93fa650e71}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1939-1471}
@@ -526,6 +598,73 @@
       \field{year}{1958}
       \field{pages}{386}
       \range{pages}{1}
+    \endentry
+    \entry{derczynski2016}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=44050d77c5274307667379b52b8f50a6}{%
+           family={Derczynski},
+           familyi={D\bibinitperiod},
+           given={Leon},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Portoro{ž}, Slovenia}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association (ELRA)}%
+      }
+      \strng{namehash}{44050d77c5274307667379b52b8f50a6}
+      \strng{fullhash}{44050d77c5274307667379b52b8f50a6}
+      \strng{bibnamehash}{44050d77c5274307667379b52b8f50a6}
+      \strng{authorbibnamehash}{44050d77c5274307667379b52b8f50a6}
+      \strng{authornamehash}{44050d77c5274307667379b52b8f50a6}
+      \strng{authorfullhash}{44050d77c5274307667379b52b8f50a6}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper addresses the problem of quantifying the differences between entity extraction systems, where in general only a small proportion a document should be selected. Comparing overall accuracy is not very useful in these cases, as small differences in accuracy may correspond to huge differences in selections over the target minority class. Conventionally, one may use per-token complementarity to describe these differences, but it is not very useful when the set is heavily skewed. In such situations, which are common in information retrieval and entity recognition, metrics like precision and recall are typically used to describe performance. However, precision and recall fail to describe the differences between sets of objects selected by different decision strategies, instead just describing the proportional amount of correct and incorrect objects selected. This paper presents a method for measuring complementarity for precision, recall and F-score, quantifying the difference between entity extraction approaches.}
+      \field{booktitle}{Proceedings of the {{Tenth International Conference}} on {{Language Resources}} and {{Evaluation}} ({{LREC}}'16)}
+      \field{month}{5}
+      \field{title}{Complementarity, {{F}}-Score, and {{NLP Evaluation}}}
+      \field{year}{2016}
+      \field{pages}{261\bibrangedash 266}
+      \range{pages}{6}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/DW6XNFUU/Derczynski_2016_Complementarity, F-score, and NLP Evaluation.pdf
+      \endverb
+    \endentry
+    \entry{brill1998}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=9f8e33baaaf8e47517200546eb04dc57}{%
+           family={Brill},
+           familyi={B\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=aaf4818e3816b53809f264b2c1b2ecae}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{6008f6e6d31cb5dea43714a6870e845f}
+      \strng{fullhash}{6008f6e6d31cb5dea43714a6870e845f}
+      \strng{bibnamehash}{6008f6e6d31cb5dea43714a6870e845f}
+      \strng{authorbibnamehash}{6008f6e6d31cb5dea43714a6870e845f}
+      \strng{authornamehash}{6008f6e6d31cb5dea43714a6870e845f}
+      \strng{authorfullhash}{6008f6e6d31cb5dea43714a6870e845f}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 17th International Conference on {{Computational}} Linguistics-{{Volume}} 1}
+      \field{title}{Classifier Combination for Improved Lexical Disambiguation}
+      \field{year}{1998}
+      \field{pages}{191\bibrangedash 195}
+      \range{pages}{5}
     \endentry
     \entry{yang2020}{book}{}
       \name{author}{4}{}{%
@@ -559,8 +698,8 @@
       \strng{authorbibnamehash}{e3235147f473f920e5692dace8b814e8}
       \strng{authornamehash}{32a696e67f4509c0732f4de95f3ff5af}
       \strng{authorfullhash}{e3235147f473f920e5692dace8b814e8}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1-107-01690-8}
@@ -637,8 +776,8 @@
       \strng{editorbibnamehash}{4d5fe782a7c94436755974e2f13259be}
       \strng{editornamehash}{c0dabd9dd88941cc115b19e2cfea53bc}
       \strng{editorfullhash}{4d5fe782a7c94436755974e2f13259be}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in {{Neural Information Processing Systems}} 26}
@@ -674,8 +813,8 @@
       \strng{authorbibnamehash}{077003808bf2e10b988df0fc99931a19}
       \strng{authornamehash}{077003808bf2e10b988df0fc99931a19}
       \strng{authorfullhash}{077003808bf2e10b988df0fc99931a19}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({{EMNLP}})}
@@ -716,8 +855,8 @@
       \strng{authorbibnamehash}{b789fb54505390bf0992148739eebc8d}
       \strng{authornamehash}{20a0e1940e2e00a84080f1f32292361f}
       \strng{authorfullhash}{b789fb54505390bf0992148739eebc8d}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Continuous word representations, trained on large unlabeled corpora are useful for many natural language processing tasks. Popular models that learn such representations ignore the morphology of words, by assigning a distinct vector to each word. This is a limitation, especially for languages with large vocabularies and many rare words. In this paper, we propose a new approach based on the skipgram model, where each word is represented as a bag of character \$n\$-grams. A vector representation is associated to each character \$n\$-gram; words being represented as the sum of these representations. Our method is fast, allowing to train models on large corpora quickly and allows us to compute word representations for words that did not appear in the training data. We evaluate our word representations on nine different languages, both on word similarity and analogy tasks. By comparing to recently proposed morphological word representations, we show that our vectors achieve state-of-the-art performance on these tasks.}
@@ -764,8 +903,8 @@
       \strng{authorbibnamehash}{f24c60896b6daa69474b40efb61f4e88}
       \strng{authornamehash}{ed4d154f6ad724ee86e4b498231228f3}
       \strng{authorfullhash}{f24c60896b6daa69474b40efb61f4e88}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.}
@@ -810,8 +949,8 @@
       \strng{authorbibnamehash}{8258acdf2e297a58b16657fba6f1dc37}
       \strng{authornamehash}{8258acdf2e297a58b16657fba6f1dc37}
       \strng{authorfullhash}{8258acdf2e297a58b16657fba6f1dc37}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Recent trends suggest that neural-network-inspired word embedding models outperform traditional count-based distributional models on word similarity and analogy detection tasks. We reveal that much of the performance gains of word embeddings are due to certain system design choices and hyperparameter optimizations, rather than the embedding algorithms themselves. Furthermore, we show that these modifications can be transferred to traditional distributional models, yielding similar gains. In contrast to prior reports, we observe mostly local or insignificant performance differences between the methods, with no global advantage to any single approach over the others.}
@@ -863,8 +1002,8 @@
       \strng{authorbibnamehash}{ce0483aee35f2e4d95b20f11377a8aa9}
       \strng{authornamehash}{86e4164ed6fc4a89f4e4e9324f5fc732}
       \strng{authorfullhash}{ce0483aee35f2e4d95b20f11377a8aa9}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Many Natural Language Processing applications nowadays rely on pre-trained word representations estimated from large text corpora such as news collections, Wikipedia and Web Crawl. In this paper, we show how to train high-quality word vector representations by using a combination of known tricks that are however rarely used together. The main result of our work is the new set of publicly available pre-trained models that outperform the current state of the art by a large margin on a number of tasks.}
@@ -882,74 +1021,120 @@
       \endverb
       \keyw{Computer Science - Computation and Language}
     \endentry
-    \entry{webster1992}{article}{}
-      \name{author}{2}{}{%
-        {{hash=457e6fabb6f8b07129a14d8164eaca3a}{%
-           family={Webster},
-           familyi={W\bibinitperiod},
-           given={Jonathan\bibnamedelima J.},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=42e26e798df2541bb92a7e47a140ab36}{%
-           family={Kit},
-           familyi={K\bibinitperiod},
-           given={Chunyu},
-           giveni={C\bibinitperiod}}}%
+    \entry{goodfellow2016}{book}{}
+      \name{author}{3}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{8160317ab330684e32e13e07ec6a3178}
-      \strng{fullhash}{8160317ab330684e32e13e07ec6a3178}
-      \strng{bibnamehash}{8160317ab330684e32e13e07ec6a3178}
-      \strng{authorbibnamehash}{8160317ab330684e32e13e07ec6a3178}
-      \strng{authornamehash}{8160317ab330684e32e13e07ec6a3178}
-      \strng{authorfullhash}{8160317ab330684e32e13e07ec6a3178}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \list{publisher}{1}{%
+        {MIT press}%
+      }
+      \strng{namehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{fullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{bibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorbibnamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authornamehash}{3ae53fe582e8a815b118d26947eaa326}
+      \strng{authorfullhash}{3ae53fe582e8a815b118d26947eaa326}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{COLING 1992 Volume 4: The 15th International Conference on Computational Linguistics}
-      \field{title}{Tokenization as the {{Initial Phase}} in {{NLP}}}
-      \field{year}{1992}
+      \field{isbn}{0-262-33737-1}
+      \field{title}{Deep Learning}
+      \field{year}{2016}
       \verb{file}
-      \verb /Users/tuomas/Zotero/storage/CKSM7RDI/Webster_Kit_1992_Tokenization as the Initial Phase in NLP.pdf
+      \verb /Users/tuomas/Zotero/storage/TR83YVBU/Goodfellow et al_2016_Deep learning.pdf
       \endverb
     \endentry
-    \entry{kudo2018}{article}{}
+    \entry{kingma2017}{article}{}
       \name{author}{2}{}{%
-        {{hash=ea1d04e9781edc1ab4ccafb0d8ff5179}{%
-           family={Kudo},
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
            familyi={K\bibinitperiod},
-           given={Taku},
-           giveni={T\bibinitperiod}}}%
-        {{hash=4398933b4ac4c83329c4fd6f1a079eef}{%
-           family={Richardson},
-           familyi={R\bibinitperiod},
-           given={John},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{da0878991af2083992357c0b93024f16}
-      \strng{fullhash}{da0878991af2083992357c0b93024f16}
-      \strng{bibnamehash}{da0878991af2083992357c0b93024f16}
-      \strng{authorbibnamehash}{da0878991af2083992357c0b93024f16}
-      \strng{authornamehash}{da0878991af2083992357c0b93024f16}
-      \strng{authorfullhash}{da0878991af2083992357c0b93024f16}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{This paper describes SentencePiece, a language-independent subword tokenizer and detokenizer designed for Neural-based text processing, including Neural Machine Translation. It provides open-source C++ and Python implementations for subword units. While existing subword segmentation tools assume that the input is pre-tokenized into word sequences, SentencePiece can train subword models directly from raw sentences, which allows us to make a purely end-to-end and language independent system. We perform a validation experiment of NMT on English-Japanese machine translation, and find that it is possible to achieve comparable accuracy to direct subword training from raw sentences. We also compare the performance of subword training and segmentation with various configurations. SentencePiece is available under the Apache 2 license at https://github.com/google/sentencepiece.}
+      \field{abstract}{We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.}
       \field{eprintclass}{cs}
       \field{eprinttype}{arxiv}
-      \field{journaltitle}{arXiv:1808.06226 [cs]}
-      \field{month}{8}
-      \field{shorttitle}{{{SentencePiece}}}
-      \field{title}{{{SentencePiece}}: {{A}} Simple and Language Independent Subword Tokenizer and Detokenizer for {{Neural Text Processing}}}
-      \field{year}{2018}
+      \field{journaltitle}{arXiv:1412.6980 [cs]}
+      \field{month}{1}
+      \field{shorttitle}{Adam}
+      \field{title}{Adam: {{A Method}} for {{Stochastic Optimization}}}
+      \field{year}{2017}
       \verb{eprint}
-      \verb 1808.06226
+      \verb 1412.6980
       \endverb
       \verb{file}
-      \verb /Users/tuomas/Zotero/storage/LY4YJAE7/Kudo and Richardson - 2018 - SentencePiece A simple and language independent s.pdf;/Users/tuomas/Zotero/storage/FV4F6RDY/1808.html
+      \verb /Users/tuomas/Zotero/storage/B8CXI5S7/Kingma_Ba_2017_Adam.pdf;/Users/tuomas/Zotero/storage/8H4R6886/1412.html
       \endverb
-      \keyw{Computer Science - Computation and Language}
+      \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{polyak1964}{article}{}
+      \name{author}{1}{}{%
+        {{hash=86e8da8c20afcbab24c7fbcca00e3f0e}{%
+           family={Polyak},
+           familyi={P\bibinitperiod},
+           given={B.\bibnamedelimi T.},
+           giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{86e8da8c20afcbab24c7fbcca00e3f0e}
+      \strng{fullhash}{86e8da8c20afcbab24c7fbcca00e3f0e}
+      \strng{bibnamehash}{86e8da8c20afcbab24c7fbcca00e3f0e}
+      \strng{authorbibnamehash}{86e8da8c20afcbab24c7fbcca00e3f0e}
+      \strng{authornamehash}{86e8da8c20afcbab24c7fbcca00e3f0e}
+      \strng{authorfullhash}{86e8da8c20afcbab24c7fbcca00e3f0e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{For the solution of the functional equation P (x) = 0 (1) (where P is an operator, usually linear, from B into B, and B is a Banach space) iteration methods are generally used. These consist of the construction of a series x0, \ldots, xn, \ldots, which converges to the solution (see, for example [1]). Continuous analogues of these methods are also known, in which a trajectory x(t), 0 {$\leqslant$} t {$\leqslant$} {$\infty$} is constructed, which satisfies the ordinary differential equation in B and is such that x(t) approaches the solution of (1) as t \textrightarrow{} {$\infty$} (see [2]). We shall call the method a k-step method if for the construction of each successive iteration xn+1 we use k previous iterations xn, \ldots, xn-k+1. The same term will also be used for continuous methods if x(t) satisfies a differential equation of the k-th order or k-th degree. Iteration methods which are more widely used are one-step (e.g. methods of successive approximations). They are generally simple from the calculation point of view but often converge very slowly. This is confirmed both by the evaluation of the speed of convergence and by calculation in practice (for more details see below). Therefore the question of the rate of convergence is most important. Some multistep methods, which we shall consider further, which are only slightly more complicated than the corresponding one-step methods, make it possible to speed up the convergence substantially. Note that all the methods mentioned below are applicable also to the problem of minimizing the differentiable functional (x) in Hilbert space, so long as this problem reduces to the solution of the equation grad (x) = 0.}
+      \field{issn}{0041-5553}
+      \field{journaltitle}{USSR Computational Mathematics and Mathematical Physics}
+      \field{month}{1}
+      \field{number}{5}
+      \field{title}{Some Methods of Speeding up the Convergence of Iteration Methods}
+      \field{volume}{4}
+      \field{year}{1964}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/0041-5553(64)90137-5
+      \endverb
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/8KA5WYX5/0041555364901375.html
+      \endverb
     \endentry
     \entry{lecun2015}{article}{}
       \name{author}{3}{}{%
@@ -978,8 +1163,8 @@
       \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authornamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1476-4687}
@@ -1021,8 +1206,8 @@
       \strng{authorbibnamehash}{fd75cea68d6982b503a0cd84f7cc7b51}
       \strng{authornamehash}{fd75cea68d6982b503a0cd84f7cc7b51}
       \strng{authorfullhash}{fd75cea68d6982b503a0cd84f7cc7b51}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Learning Internal Representations by Error Propagation}
@@ -1059,8 +1244,8 @@
       \strng{authorbibnamehash}{e394d4a496ef63d7c69ef669365d2b97}
       \strng{authornamehash}{e394d4a496ef63d7c69ef669365d2b97}
       \strng{authorfullhash}{e394d4a496ef63d7c69ef669365d2b97}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1045-9227}
@@ -1097,8 +1282,8 @@
       \strng{authorbibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
       \strng{authornamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
       \strng{authorfullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0899-7667}
@@ -1135,8 +1320,8 @@
       \strng{authorbibnamehash}{1ff8abdcaecd1dec714b57b6d9fe8844}
       \strng{authornamehash}{1ff8abdcaecd1dec714b57b6d9fe8844}
       \strng{authorfullhash}{1ff8abdcaecd1dec714b57b6d9fe8844}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the {{IEEE}}-{{INNS}}-{{ENNS International Joint Conference}} on {{Neural Networks}}. {{IJCNN}} 2000. {{Neural Computing}}: {{New Challenges}} and {{Perspectives}} for the {{New Millennium}}}
@@ -1194,8 +1379,8 @@
       \strng{authorbibnamehash}{5359397a5d44e88d06c262f5fc48d6f0}
       \strng{authornamehash}{4b87f1ccc52f32ff7bdc83597edb7915}
       \strng{authorfullhash}{5359397a5d44e88d06c262f5fc48d6f0}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{In this paper, we propose a novel neural network model called RNN Encoder-Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixed-length vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder-Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases.}
@@ -1262,8 +1447,8 @@
       \strng{authorbibnamehash}{f82970bbd2bdd7a002d2af62b743d5cc}
       \strng{authornamehash}{7cc810834e9ba19dd5f8b0a37be3172d}
       \strng{authorfullhash}{f82970bbd2bdd7a002d2af62b743d5cc}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.}
@@ -1310,8 +1495,8 @@
       \strng{authorbibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
       \strng{authornamehash}{3733dbdff90171390240438fddfbc952}
       \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the {{IEEE}} Conference on Computer Vision and Pattern Recognition}
@@ -1322,6 +1507,130 @@
       \verb{file}
       \verb /Users/tuomas/Zotero/storage/33DJANSG/He et al_2016_Deep residual learning for image recognition.pdf
       \endverb
+    \endentry
+    \entry{kingma2014}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=53d2880ad8047b61cdae2c6b2803e763}{%
+           family={Welling},
+           familyi={W\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{fullhash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{bibnamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authorbibnamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authornamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authorfullhash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results.}
+      \field{eprintclass}{cs, stat}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{arXiv:1312.6114 [cs, stat]}
+      \field{month}{5}
+      \field{title}{Auto-{{Encoding Variational Bayes}}}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1312.6114
+      \endverb
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/GQH2YIPU/Kingma_Welling_2014_Auto-Encoding Variational Bayes.pdf;/Users/tuomas/Zotero/storage/VYPBBZ3G/1312.html
+      \endverb
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+    \entry{miao2016}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cca1d0cc31fc06bc0297c522a28f7e57}{%
+           family={Miao},
+           familyi={M\bibinitperiod},
+           given={Yishu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2c466f963663fac7a97926815c50fa18}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7f78b89d658b3089596ea20b3dc21304}{%
+           family={Blunsom},
+           familyi={B\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bf5342ff5892839e8f6db18507b1f44}
+      \strng{fullhash}{3bf5342ff5892839e8f6db18507b1f44}
+      \strng{bibnamehash}{3bf5342ff5892839e8f6db18507b1f44}
+      \strng{authorbibnamehash}{3bf5342ff5892839e8f6db18507b1f44}
+      \strng{authornamehash}{3bf5342ff5892839e8f6db18507b1f44}
+      \strng{authorfullhash}{3bf5342ff5892839e8f6db18507b1f44}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Recent advances in neural variational inference have spawned a renaissance in deep latent variable models. In this paper we introduce a generic variational inference framework for generative and conditional models of text. While traditional variational methods derive an analytic approximation for the intractable distributions over latent variables, here we construct an inference network conditioned on the discrete text input to provide the variational distribution. We validate this framework on two very different text modelling applications, generative document modelling and supervised question answering. Our neural variational document model combines a continuous stochastic document representation with a bag-of-words generative model and achieves the lowest reported perplexities on two standard test corpora. The neural answer selection model employs a stochastic representation layer within an attention mechanism to extract the semantics between a question and answer pair. On two question answering benchmarks this model exceeds all previous published benchmarks.}
+      \field{eprintclass}{cs, stat}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{arXiv:1511.06038 [cs, stat]}
+      \field{month}{6}
+      \field{title}{Neural {{Variational Inference}} for {{Text Processing}}}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1511.06038
+      \endverb
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/CWPAPH97/Miao et al_2016_Neural Variational Inference for Text Processing.pdf;/Users/tuomas/Zotero/storage/GFVPG6ZI/1511.html
+      \endverb
+      \keyw{Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+    \entry{kalchbrenner2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d2d0778c1cdd451c75b874b58eec7564}{%
+           family={Kalchbrenner},
+           familyi={K\bibinitperiod},
+           given={Nal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e03325308d4d207f32caeecad362f184}{%
+           family={Grefenstette},
+           familyi={G\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7f78b89d658b3089596ea20b3dc21304}{%
+           family={Blunsom},
+           familyi={B\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1d6646e5e0eaa707df345cc93fbda25}
+      \strng{fullhash}{f1d6646e5e0eaa707df345cc93fbda25}
+      \strng{bibnamehash}{f1d6646e5e0eaa707df345cc93fbda25}
+      \strng{authorbibnamehash}{f1d6646e5e0eaa707df345cc93fbda25}
+      \strng{authornamehash}{f1d6646e5e0eaa707df345cc93fbda25}
+      \strng{authorfullhash}{f1d6646e5e0eaa707df345cc93fbda25}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The ability to accurately represent sentences is central to language understanding. We describe a convolutional architecture dubbed the Dynamic Convolutional Neural Network (DCNN) that we adopt for the semantic modelling of sentences. The network uses Dynamic k-Max Pooling, a global pooling operation over linear sequences. The network handles input sentences of varying length and induces a feature graph over the sentence that is capable of explicitly capturing short and long-range relations. The network does not rely on a parse tree and is easily applicable to any language. We test the DCNN in four experiments: small scale binary and multi-class sentiment prediction, six-way question classification and Twitter sentiment prediction by distant supervision. The network achieves excellent performance in the first three tasks and a greater than 25\% error reduction in the last task with respect to the strongest baseline.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{arXiv:1404.2188 [cs]}
+      \field{month}{4}
+      \field{title}{A {{Convolutional Neural Network}} for {{Modelling Sentences}}}
+      \field{year}{2014}
+      \verb{eprint}
+      \verb 1404.2188
+      \endverb
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/VAYEUQRP/Kalchbrenner et al_2014_A Convolutional Neural Network for Modelling Sentences.pdf;/Users/tuomas/Zotero/storage/SCCLGEPQ/1404.html
+      \endverb
+      \keyw{Computer Science - Computation and Language}
     \endentry
     \entry{dai2015}{article}{}
       \name{author}{2}{}{%
@@ -1342,8 +1651,8 @@
       \strng{authorbibnamehash}{ecc84070e96f8be149f67682afc54e68}
       \strng{authornamehash}{ecc84070e96f8be149f67682afc54e68}
       \strng{authorfullhash}{ecc84070e96f8be149f67682afc54e68}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present two approaches that use unlabeled data to improve sequence learning with recurrent networks. The first approach is to predict what comes next in a sequence, which is a conventional language model in natural language processing. The second approach is to use a sequence autoencoder, which reads the input sequence into a vector and predicts the input sequence again. These two algorithms can be used as a "pretraining" step for a later supervised sequence learning algorithm. In other words, the parameters obtained from the unsupervised step can be used as a starting point for other supervised training models. In our experiments, we find that long short term memory recurrent networks after being pretrained with the two approaches are more stable and generalize better. With pretraining, we are able to train long short term memory recurrent networks up to a few hundred timesteps, thereby achieving strong performance in many text classification tasks, such as IMDB, DBpedia and 20 Newsgroups.}
@@ -1385,8 +1694,8 @@
       \strng{authorbibnamehash}{b892a97147b503f13252288dd61eceaa}
       \strng{authornamehash}{b892a97147b503f13252288dd61eceaa}
       \strng{authorfullhash}{b892a97147b503f13252288dd61eceaa}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Recurrent neural networks (RNNs), such as long short-term memory networks (LSTMs), serve as a fundamental building block for many sequence learning tasks, including machine translation, language modeling, and question answering. In this paper, we consider the specific problem of word-level language modeling and investigate strategies for regularizing and optimizing LSTM-based models. We propose the weight-dropped LSTM which uses DropConnect on hidden-to-hidden weights as a form of recurrent regularization. Further, we introduce NT-ASGD, a variant of the averaged stochastic gradient method, wherein the averaging trigger is determined using a non-monotonic condition as opposed to being tuned by the user. Using these and other regularization strategies, we achieve state-of-the-art word level perplexities on two data sets: 57.3 on Penn Treebank and 65.8 on WikiText-2. In exploring the effectiveness of a neural cache in conjunction with our proposed model, we achieve an even lower state-of-the-art perplexity of 52.8 on Penn Treebank and 52.0 on WikiText-2.}
@@ -1441,8 +1750,8 @@
       \strng{authorbibnamehash}{236f3f38b38cb3d807fcdd4ad4a61a55}
       \strng{authornamehash}{568f4a4944c08ba800dfa53780e3e3e6}
       \strng{authorfullhash}{236f3f38b38cb3d807fcdd4ad4a61a55}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We introduce DropConnect, a generalization of Dropout (Hinton et al., 2012), for regularizing large fully-connected layers within neural networks. When training with Dropout, a randomly selected subset of activations are set to zero within each layer. DropConnect instead sets a randomly selected subset of weights within the network to zero. Each unit thus receives input from a random subset of units in the previous layer. We derive a bound on the generalization performance of both Dropout and DropConnect. We then evaluate DropConnect on a range of datasets, comparing to Dropout, and show state-of-the-art results on several image recognition benchmarks by aggregating multiple DropConnect-trained models.}
@@ -1482,8 +1791,8 @@
       \strng{authorbibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
       \strng{authornamehash}{760df5af1463fdc901455117e4fefd96}
       \strng{authorfullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).}
@@ -1561,8 +1870,8 @@
       \strng{authorbibnamehash}{3dc9e2310b3928a3f0be242c59c83058}
       \strng{authornamehash}{efb78d75edae4c7c2772249ec014241a}
       \strng{authorfullhash}{3dc9e2310b3928a3f0be242c59c83058}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1609.08144}
@@ -1601,8 +1910,8 @@
       \strng{authorbibnamehash}{1616e28b53907ac54d37f9dc941586bf}
       \strng{authornamehash}{1bc1d7c11199786581719ddffc86a4d8}
       \strng{authorfullhash}{1616e28b53907ac54d37f9dc941586bf}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2003.10555}
@@ -1661,8 +1970,8 @@
       \strng{authorbibnamehash}{093a27299b4e1636a339ff10a01f61b1}
       \strng{authornamehash}{cb72698ba31f9c69948a3ad14b8cb728}
       \strng{authorfullhash}{093a27299b4e1636a339ff10a01f61b1}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Deep learning-based language models pretrained on large unannotated text corpora have been demonstrated to allow efficient transfer learning for natural language processing, with recent approaches such as the transformer-based BERT model advancing the state of the art across a variety of tasks. While most work on these models has focused on high-resource languages, in particular English, a number of recent efforts have introduced multilingual models that can be fine-tuned to address tasks in a large number of different languages. However, we still lack a thorough understanding of the capabilities of these models, in particular for lower-resourced languages. In this paper, we focus on Finnish and thoroughly evaluate the multilingual BERT model on a range of tasks, comparing it with a new Finnish BERT model trained from scratch. The new language-specific model is shown to systematically and clearly outperform the multilingual. While the multilingual model largely fails to reach the performance of previously proposed methods, the custom Finnish BERT model establishes new state-of-the-art results on all corpora for all reference tasks: part-of-speech tagging, named entity recognition, and dependency parsing. We release the model and all related resources created for this study with open licenses at https://turkunlp.org/finbert .}
@@ -1680,6 +1989,80 @@
       \verb /Users/tuomas/Zotero/storage/RIUH58UV/Virtanen et al_2019_Multilingual is not enough.pdf;/Users/tuomas/Zotero/storage/PQ5IYXY2/1912.html
       \endverb
       \keyw{Computer Science - Computation and Language}
+    \endentry
+    \entry{zotero-178}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://docs.csc.fi/computing/system/\#puhti}
+      \field{title}{Systems - {{Docs CSC}}}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/ZESQHARD/system.html
+      \endverb
+    \endentry
+    \entry{zotero-186}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://git-scm.com/}
+      \field{title}{Git}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/ACJF3AGI/git-scm.com.html
+      \endverb
+    \endentry
+    \entry{zotero-174}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://slurm.schedmd.com/documentation.html}
+      \field{title}{Slurm {{Workload Manager}} - {{Documentation}}}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/7TGUQ9ZS/documentation.html
+      \endverb
+    \endentry
+    \entry{zotero-176}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://slurm.schedmd.com/quickstart.html}
+      \field{title}{Slurm {{Workload Manager}} - {{Quick Start User Guide}}}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/7MYMMG34/quickstart.html
+      \endverb
+    \endentry
+    \entry{zotero-180}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.gnu.org/software/screen/}
+      \field{note}{Library Catalog: www.gnu.org}
+      \field{title}{Gnu.Org}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/GV9PCHPT/screen.html
+      \endverb
+    \endentry
+    \entry{zotero-182}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://jupyter-notebook.readthedocs.io/en/stable/}
+      \field{title}{The {{Jupyter Notebook}} —{} {{Jupyter Notebook}} 6.0.3 Documentation}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/Q4WRJ42V/stable.html
+      \endverb
+    \endentry
+    \entry{zotero-184}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.ssh.com/ssh/tunneling/}
+      \field{title}{{{SSH Tunnel}}}
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/8QJMVLET/tunneling.html
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

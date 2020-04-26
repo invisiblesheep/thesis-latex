@@ -1,23 +1,24 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[39] biber-darwin:315> INFO - === Thu Apr 23, 2020, 13:28:36
-[63] Biber.pm:371> INFO - Reading 'thesis.bcf'
-[141] Biber.pm:889> INFO - Found 36 citekeys in bib section 0
-[152] Biber.pm:4093> INFO - Processing section 0
-[162] Biber.pm:4254> INFO - Looking for bibtex format file 'Bibli_zotero.bib' for section 0
-[168] bibtex.pm:1523> INFO - LaTeX decoding ...
-[243] bibtex.pm:1340> INFO - Found BibTeX data source 'Bibli_zotero.bib'
-[269] Utils.pm:193> WARN - ISBN '0360-0300' in entry 'sebastiani2002' is invalid - run biber with '--validate_datamodel' for details.
-[304] Utils.pm:193> WARN - ISBN '978-3-540-64417-0 978-3-540-69781-7' in entry 'lewis1998' is invalid - run biber with '--validate_datamodel' for details.
-[321] Utils.pm:193> WARN - ISBN '978-1-4614-7137-0 978-1-4614-7138-7' in entry 'james2013' is invalid - run biber with '--validate_datamodel' for details.
-[327] Utils.pm:193> WARN - ISBN '1939-1471' in entry 'rosenblatt1958' is invalid - run biber with '--validate_datamodel' for details.
-[383] Utils.pm:193> WARN - ISBN '1476-4687' in entry 'lecun2015' is invalid - run biber with '--validate_datamodel' for details.
-[391] Utils.pm:193> WARN - ISBN '1045-9227' in entry 'bengio1994' is invalid - run biber with '--validate_datamodel' for details.
-[395] Utils.pm:193> WARN - ISBN '0899-7667' in entry 'hochreiter1997' is invalid - run biber with '--validate_datamodel' for details.
-[508] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[508] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[508] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[508] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[529] bbl.pm:636> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[543] bbl.pm:739> INFO - Output to thesis.bbl
-[543] Biber.pm:110> INFO - WARNINGS: 7
+[45] biber-darwin:315> INFO - === Sat Apr 25, 2020, 17:26:59
+[84] Biber.pm:371> INFO - Reading 'thesis.bcf'
+[176] Biber.pm:889> INFO - Found 51 citekeys in bib section 0
+[187] Biber.pm:4093> INFO - Processing section 0
+[199] Biber.pm:4254> INFO - Looking for bibtex format file 'Bibli_zotero.bib' for section 0
+[207] bibtex.pm:1523> INFO - LaTeX decoding ...
+[310] bibtex.pm:1340> INFO - Found BibTeX data source 'Bibli_zotero.bib'
+[340] Utils.pm:193> WARN - ISBN '1947-4040' in entry 'goldberg2017' is invalid - run biber with '--validate_datamodel' for details.
+[360] Utils.pm:193> WARN - ISBN '0360-0300' in entry 'sebastiani2002' is invalid - run biber with '--validate_datamodel' for details.
+[382] Utils.pm:193> WARN - ISBN '978-3-540-64417-0 978-3-540-69781-7' in entry 'lewis1998' is invalid - run biber with '--validate_datamodel' for details.
+[397] Utils.pm:193> WARN - ISBN '978-1-4614-7137-0 978-1-4614-7138-7' in entry 'james2013' is invalid - run biber with '--validate_datamodel' for details.
+[403] Utils.pm:193> WARN - ISBN '1939-1471' in entry 'rosenblatt1958' is invalid - run biber with '--validate_datamodel' for details.
+[472] Utils.pm:193> WARN - ISBN '1476-4687' in entry 'lecun2015' is invalid - run biber with '--validate_datamodel' for details.
+[483] Utils.pm:193> WARN - ISBN '1045-9227' in entry 'bengio1994' is invalid - run biber with '--validate_datamodel' for details.
+[487] Utils.pm:193> WARN - ISBN '0899-7667' in entry 'hochreiter1997' is invalid - run biber with '--validate_datamodel' for details.
+[622] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[622] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[622] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[622] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[653] bbl.pm:636> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[672] bbl.pm:739> INFO - Output to thesis.bbl
+[673] Biber.pm:110> INFO - WARNINGS: 8

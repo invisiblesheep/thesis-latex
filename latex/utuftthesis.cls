@@ -82,7 +82,7 @@
   \RequirePackage{polyglossia}
   \setmainlanguage{\utuftthesis@language}
   \langfin{\setotherlanguage{english}}
-  
+
   \ifutuftthesis@realtimesnewroman
     % can't use (C) TTF fonts when the ms corefonts are not installed
     \ifutuftthesis@sharelatex
@@ -105,19 +105,20 @@
   }{
     \RequirePackage[english, \l@nguage]{babel}
   }
-  
+
   % change default font to times-roman
   \renewcommand{\sfdefault}{phv}
   \renewcommand{\rmdefault}{ptm}
   \renewcommand{\ttdefault}{pcr}
 \fi
-  
+
 %% the rest of the requirements listed here as they have
 %% language specific definitions etc.
 \RequirePackage[style=ieee,backend=biber]{biblatex} % bibliography, new engine
 \RequirePackage{listings}               % handle inclusion of source code
 \RequirePackage{csquotes}
 \RequirePackage{amssymb,amsthm,amsmath} % load ams-packages for maths
+\RequirePackage{empheq}
 \RequirePackage{datetime2}              % month names
 \RequirePackage{titlecaps}              % month names
 
@@ -198,7 +199,7 @@
 
 % fix page size
 %
-%  - page width: 
+%  - page width:
 %     1inch             +
 %      \hoffset         +
 %      \oddsidemargin   +
@@ -206,7 +207,7 @@
 %      \marginsep       +
 %      \marginparwidth
 %
-%  - page height: 
+%  - page height:
 %     1inch             +
 %      \voffset         +
 %      \topmargin       +
@@ -214,7 +215,7 @@
 %      \headsep         +
 %      \textheight      +
 %      \footnotesep     +
-%      \footheigth 
+%      \footheigth
 %
 %  - 1 pt == 1/72 inch == 0.35 mm
 %
@@ -228,8 +229,8 @@
 \setlength{\oddsidemargin}{-1 in}
 \addtolength\oddsidemargin{40 mm}
 
-% page height... textheight starts at ~4cm from top, 
-% i.e. 1 in + 12 pt + 24 pt = 1.5 in 
+% page height... textheight starts at ~4cm from top,
+% i.e. 1 in + 12 pt + 24 pt = 1.5 in
 %
 \setlength{\voffset}{0 mm}
 \setlength{\topmargin}{0 mm}
@@ -238,7 +239,7 @@
 \setlength{\textheight}{230mm}
 \setlength{\footnotesep}{12 pt}
 
- 
+
 % setup linespacings to suit to the (stupid) requirement of double spacing
 %
 % - fake 1.5 linespacing
@@ -247,7 +248,7 @@
 % - fake 2 linespacing
 %
 \renewcommand{\baselinestretch}{1.655}
-  
+
 %% Modify the \printbibliography command
 \defbibheading{bibliography}{
   %\eofpages
@@ -316,11 +317,11 @@
 
 %% title page, reuses the standard \maketitle
 \renewcommand*{\maketitle}{%
-  \clearpage 
+  \clearpage
   \thispagestyle{empty}
   \vspace*{\stretch{1}}
   \vspace{3mm}
-  \noindent 
+  \noindent
   \rule{\linewidth}{1 mm}
   \renewcommand{\baselinestretch}{1.05}\normalsize
   \begin{flushright}
@@ -345,7 +346,7 @@
   \end{adjustbox}
   \vspace*{\stretch{1}}\\
   \scriptsize \turnitin
-  
+
   \renewcommand{\baselinestretch}{1.655}\normalsize
   \clearpage
 }
@@ -400,7 +401,7 @@
   \setlength{\headsep}{24 pt}
   \setlength{\topmargin}{0 mm}
   \renewcommand{\baselinestretch}{1.655}\normalsize
-  
+
   % roman numbering for table of contents etc.
   \pagenumbering{roman}
 }
@@ -439,7 +440,7 @@
   % the totalcount counter is only used for appendices, set a bogus value now
   % fails if the document has over 1000 pages
   \setcounter{totalcount@page}{-1000}
-}       
+}
 
 %% postpone the doc style through these sections
 \pretocmd{\tableofcontents}{\renewcommand{\startpages}{}}{}{}
@@ -482,4 +483,3 @@
 }{
   \hypersetup{hidelinks} % can be customized if you don't want to hide links
 }
-
