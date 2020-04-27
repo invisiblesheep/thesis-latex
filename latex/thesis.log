@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.25)  25 APR 2020 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.25)  27 APR 2020 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,26 +974,26 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 73.
  [39] [40]) (./conclusion.tex
-Overfull \hbox (3.73328pt too wide) in paragraph at lines 100--1
+Overfull \hbox (3.73328pt too wide) in paragraph at lines 112--1
 []\T1/ptm/m/n/12 -- SUR-PRIS-ING RE-SULTS FROM ULM-FIT WRT THE PER-FOR-MANCE OF
  ELEC-
  []
 
 
-Overfull \hbox (2.51112pt too wide) in paragraph at lines 100--1
+Overfull \hbox (2.51112pt too wide) in paragraph at lines 112--1
 \T1/ptm/m/n/12 TURE WORK COULD IN-CLUDE PRE-TRAIN-ING ON A LARGER COR-PUS OF GE
 N-
  []
 
-[41]
+[41] [42]
 \relax  5.
-) [42
+) [43
 
 ]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 117.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [43
+) [44
 
 ]
 Overfull \hbox (0.64046pt too wide) in paragraph at lines 117--117
@@ -1007,13 +1007,13 @@ Overfull \hbox (8.1554pt too wide) in paragraph at lines 117--117
 guage Re-sources As-so-ci-a-tion (ELRA),
  []
 
-[44]
+[45]
 Overfull \hbox (32.95114pt too wide) in paragraph at lines 117--117
 []\T1/ptm/m/n/12 D. P. Kingma and J. Ba, ^^P  Adam: A Method for Stochas-tic Op
 -ti-miza-tion^^Q, \T1/ptm/m/it/12 arXiv:1412.6980
  []
 
-[45] [46]
+[46] [47]
 Overfull \hbox (7.13614pt too wide) in paragraph at lines 117--117
 []\T1/ptm/m/n/12 D. P. Kingma and M. Welling, ^^P  Auto-Encoding Vari-a-tional 
 Bayes^^Q, \T1/ptm/m/it/12 arXiv:1312.6114
@@ -1032,7 +1032,7 @@ Overfull \hbox (48.19304pt too wide) in paragraph at lines 117--117
  \T1/ptm/m/it/12 arXiv preprint arXiv:1609.08144\T1/ptm/m/n/12 ,
  []
 
-[47]
+[48]
 Overfull \hbox (48.66039pt too wide) in paragraph at lines 117--117
 []\T1/ptm/m/it/12 Slurm Work-load Man-ager - Doc-u-men-ta-tion\T1/ptm/m/n/12 , 
 https://slurm.schedmd.com/documentation.html. 
@@ -1050,7 +1050,7 @@ Overfull \hbox (1.41353pt too wide) in paragraph at lines 117--117
 en/, Li-brary Cat-a-log: www.gnu.org. 
  []
 
-[48] (./thesis.aux)
+[49] (./thesis.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1059,10 +1059,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17167 strings out of 492616
- 305559 string characters out of 6129480
- 745279 words of memory out of 5000000
- 20762 multiletter control sequences out of 15000+600000
+ 17168 strings out of 492616
+ 305574 string characters out of 6129480
+ 745290 words of memory out of 5000000
+ 20763 multiletter control sequences out of 15000+600000
  65788 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,11n,49p,1794b,3587s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1081,10 +1081,10 @@ c/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/u
 rw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times
 /utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pf
 b></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (53 pages, 478299 bytes).
+Output written on thesis.pdf (54 pages, 479425 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 257 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

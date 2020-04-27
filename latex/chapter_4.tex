@@ -2,19 +2,19 @@
 
 \section{Problem definition} \label{Problem definition}
 
--- Doctors write medical reports and define the "label" aka diagnosis code for it -> might get it wrong or not attach one at all -> automatic classification would be useful. --
+-- Doctors write medical reports and define the ``label'' aka diagnosis code for it -> might get it wrong or not attach one at all -> automatic classification would be useful. --
 
 A model for classifying medical reports could be used to automatically define a proper diagnosis code for a new piece of text or to find older mislabelled texts.
 The motivation for this was to, firstly, define the feasibility and current state of deep learning for automatic text classification of medical text and, secondly, to build a set of tools for the hospital in order for them to be able to train classifiers for different diagnosis codes.
 
 Since compute resources was a major constraint, only approaches with a reasonable single-gpu training time were considered.
-Thus, ULMFiT, ELECTRA, and FinBERT which was pretrained by Virtanen et al. \cite{virtanen2019}, were chosen for comparison.
-In addition to comparing the different models with each other, each model - excluding FinBERT - was trained multiple times with different vocabulary sizes to see if it impacted the results.
+Thus, ULMFiT, ELECTRA, and FinBERT which was pretrained by Virtanen et al.~\cite{virtanen2019}, were chosen for comparison.
+In addition to comparing the different models with each other, each model --- excluding FinBERT --- was trained multiple times with different vocabulary sizes to see if it impacted the results.
 Word tokens were extracted with SentencePiece after the data had been preprocessed.
 
 \section{Data} \label{Data}
 \subsection{Medical reports}\label{Medical reports}
-The medical data for the work was provided by (VSSHP/Auria/TYKS).
+The medical data for the work was provided by Auria services at the Turku university hospital.
 It consists of doctor's statements with corresponding diagnosis codes and other metadata, such as date of visit and health center office, of patients in the Turku-region.
 No metadata was utilized in the training data, only the written text and the corresponding diagnosis code.
 Since the actual diagnosis code for the text appeared often in it, all diagnosis codes in text were masked with a [CODE] token in the training data to prevent the model from learning from them.
@@ -27,17 +27,17 @@ Since receiving access to the actual medical data took some time, the chosen mod
 It is composed from three different sources: news articles, online discussions, and documents crawled from the Finnish internet, and consists of 3.3 billion tokens from 234 million sentences.
 The total size of the corpus is roughly 30 times the size of the Finnish Wikipedia.
 The corpus was extensively preprocessed by filtering out documents that had too high a ratio of digits, uppercase or non-Finnish alphabetic characters, or low average sentence length.
-Additionally, documents that featured 25\% or more duplication were removed as well as heuristically defined undesirables \cite{virtanen2019}.
+Additionally, documents that featured 25\% or more duplication were removed as well as heuristically defined undesirables~\cite{virtanen2019}.
 
 
 \section{Compute resources} \label{Compute resources}
-Compute resources for the project were provided by (VSSHP/Auria/Tyks) for the medical models, and CSC for the general Finnish models.
+Compute resources for the project were provided by Auria services for the medical models, and CSC for the general Finnish models.
 
 \subsection{CSC} \label{CSC}
 CSC (IT Center for Science Ltd.) is a non-profit state enterprise owned by the Finnish state and higher education institutions in Finland.
 It offers compute resources for scientific purposes to universities and upkeeps the FUNET network, which is the Finnish national research and education network.
 CSC operates two supercomputers, namely Taito and Puhti, and is working on a new supercomputer, Mahti, that is scheduled to open for use some time in 2020.
-For this project, Puhti was chosen since it provides an "artificial intelligence partition" with access to GPU nodes with multiple Nvidia V100 graphics cards.
+For this project, Puhti was chosen since it provides an ``artificial intelligence partition'' with access to GPU nodes with multiple Nvidia V100 graphics cards.
 
 \subsubsection{Puhti}\label{Puhti}
 Puhti was launched on September 2, 2019.
@@ -47,7 +47,7 @@ Puhti has 682 CPU nodes, with a theoretical peak performance of 1,8 petaflops, a
 Each node is equipped with two Intel Xeon processors, code name Cascade Lake, with 20 cores each running at 2,1 GHz.
 Each GPU node also has four Nvidia Volta V100 GPUs with 32 GB of memory each.
 The nodes are equipped with 384 GB of main memory and 3,6 TB of fast local storage.
-The AI partition is engineered to allow GPU-intensive workloads to scale well across multiple nodes \cite{zotero-178}.
+The AI partition is engineered to allow GPU-intensive workloads to scale well across multiple nodes~\cite{zotero-178}.
 
 When working with Puhti on this project, the workflow consisted of coding and testing the neural networks locally first, and then using Slurm to run batch jobs on Puhti.
 This lead to some additional overhead in time for the project since working simultaneously on two environments proved quite arduous.
@@ -58,7 +58,7 @@ Puhti uses the Slurm workload manager \cite{zotero-174} to handle scheduling job
 It is an open-source, fault-tolerant, and highly scalable cluster management and job scheduling system for Linux clusters.
 First, it manages the allocation of exclusive and/or non-exclusive access to compute nodes to users for some duration of time during which they can perform work.
 Second, it provides a framework for starting, executing, and monitoring work on the set of allocated nodes.
-Finally, it manages a queue of pending work to arbitrate the contention for resources \cite{zotero-176}.
+Finally, it manages a queue of pending work to arbitrate the contention for resources~\cite{zotero-176}.
 
 
 \subsection{VSSHP Blackbird} \label{VSSHP Blackbird}
@@ -84,12 +84,24 @@ The code for finetuning FinBERT was taken from the official BERT github reposito
 \section{Results}\label{Results}
 A binary classifier was built to identify texts that had one of two knee-related diagnosis codes from the training data.
 
--- RESULT TABLE WITH: --
--- Acc, precision, recall, f1 --
--- FOR:--
--- ULMFIT 30K, 50K, 100K --
--- ELECTRA 30K, 50K, 100K --
--- FinBERT with original vocab of 50K --
+\begin{table}[t]
+\begin{center}
+\begin{tabular}{lcccc}
+        & Acc. & Prec. & Rec. & F1 \\
+        \hline
+FinBERT &   84.98  &   ---   &    --- &  ---   \\
+ELECTRA-30K    &     90.61 & 71.90 & 61.50 & 66.29 \\
+ELECTRA-50K  &     90.64 & 71.20 & 63.31 & 67.03 \\
+ELECTRA-100K  &     91.08 & 72.60 & 65.27 & 68.74 \\
+ULMFiT-30K  &   93.84 & \textbf{84.28} & 72.54 & 77.97 \\
+ULMFiT-50K  &  93.97 & 82.91 & \textbf{75.41} & 78.98 \\
+ULMFiT-100K  & \textbf{94.11} & 83.95 & 75.17 & \textbf{79.32} \\
+fastText & 92.81 & 83.42 & 65.07 & 73.11 \\
+\end{tabular}
+\caption{Classification results of models with different vocabulary sizes on evaluation set.}
+\label{table:results}
+\end{center}
+\end{table}
 
 -- TABLE OF TRAINING TIMES FOR DIFFERENT MODELS, PRETRAINING AND FINETUNING, OMIT FINBERT PRETRAINING TIME SINCE ALREADY PRETRAINED --
 
