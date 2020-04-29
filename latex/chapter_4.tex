@@ -4,8 +4,6 @@
 
 -- Doctors write medical reports and define the ``label'' aka diagnosis code for it -> might get it wrong or not attach one at all -> automatic classification would be useful. --
 
-A model for classifying medical reports could be used to automatically define a proper diagnosis code for a new piece of text or to find older mislabelled texts.
-The motivation for this was to, firstly, define the feasibility and current state of deep learning for automatic text classification of medical text and, secondly, to build a set of tools for the hospital in order for them to be able to train classifiers for different diagnosis codes.
 
 Since compute resources was a major constraint, only approaches with a reasonable single-gpu training time were considered.
 Thus, ULMFiT, ELECTRA, and FinBERT which was pretrained by Virtanen et al.~\cite{virtanen2019}, were chosen for comparison.
@@ -20,6 +18,9 @@ No metadata was utilized in the training data, only the written text and the cor
 Since the actual diagnosis code for the text appeared often in it, all diagnosis codes in text were masked with a [CODE] token in the training data to prevent the model from learning from them.
 HTML-tags such as <br> were removed in preprocessing and texts that were deemed too short (less than 80 characters) were also removed from the training set.
 After preprocessing, the data consisted of X tokens in Y sentences.
+
+Class balance for the dataset was 85\% negative and 15\% positive samples.
+The dataset was eventually balanced by upsampling the positive samples.
 -- GET DATA FOR CLINICAL, TOKENS AND SENTENCES --
 
 \subsection{General Finnish}\label{General Finnish}
@@ -71,7 +72,7 @@ Jupyter notebooks~\cite{zotero-182} were also used on the machine for data visua
 \subsection{Methods}\label{Methods}
 \subsubsection{ULMFiT}\label{ULMFiT}
 The fastai v1 -library was used for implementing ULMFiT\footnote{https://github.com/fastai/fastai}.
-As the library's support for SentencePiece\footnote{https://github.com/google/sentencepiece} was quite bad, a substantial amount of custom code had to be written.
+As the library's support for SentencePiece\footnote{https://github.com/google/sentencepiece} was at the time quite limited, a considerable amount of custom code had to be written to incorporate the sub-word tokenizer in the training process.
 The scripts used for training ULMFiT with SentencePiece are open-sourced and can be found from\footnote{https://github.com/invisiblesheep/ulmfit-sentencepiece}.
 
 \subsubsection{ELECTRA}\label{ELECTRA}
@@ -81,37 +82,57 @@ The code was forked in order to make some changes to it regarding finetuning and
 \subsubsection{BERT}\label{BERT}
 The code for finetuning FinBERT was taken from the official BERT github repository\footnote{https://github.com/google-research/bert}, and FinBERT itself can be found from\footnote{https://github.com/TurkuNLP/FinBERT}.
 
+\subsubsection{fastText}\label{fastText}
+fastText\footnote{https://github.com/facebookresearch/fastText} was trained as a baseline model.
+In addition to providing word embeddings, fastText can be used as a classifier as well.
+fastText obtains document vectors by averaging word embeddings after which it uses multinomial logistic regression for classification.
+A probability distribution over classes is gained as a result after applying the softmax function to the results.
+It uses a bunch of tricks, such as hierarchical softmax, to up the speed of training the model.
+Thus it's an order of magnitude faster to train than a deep learning model but it still is somewhat competitive with one.
+
 \section{Results}\label{Results}
 A binary classifier was built to identify texts that had one of two knee-related diagnosis codes from the training data.
 
 \begin{table}[t]
 \begin{center}
-\begin{tabular}{lcccc}
-        & Acc. & Prec. & Rec. & F1 \\
+\begin{tabular}{lccc}
+         & Precision & Recall & F1 \\
         \hline
-FinBERT &   84.98  &   ---   &    --- &  ---   \\
-ELECTRA-30K    &     90.61 & 71.90 & 61.50 & 66.29 \\
-ELECTRA-50K  &     90.64 & 71.20 & 63.31 & 67.03 \\
-ELECTRA-100K  &     91.08 & 72.60 & 65.27 & 68.74 \\
-ULMFiT-30K  &   93.84 & \textbf{84.28} & 72.54 & 77.97 \\
-ULMFiT-50K  &  93.97 & 82.91 & \textbf{75.41} & 78.98 \\
-ULMFiT-100K  & \textbf{94.11} & 83.95 & 75.17 & \textbf{79.32} \\
-fastText & 92.81 & 83.42 & 65.07 & 73.11 \\
+FinBERT &      ---   &    --- &  ---   \\
+ELECTRA-30K    &     71.90 & 61.50 & 66.29 \\
+ELECTRA-50K  &      70.65 & 74.38 & 72.47 \\
+ELECTRA-100K  &     72.60 & 65.27 & 68.74 \\
+ULMFiT-30K  &    84.28 & 72.54 & 77.97 \\
+ULMFiT-50K  &   82.91 & 75.41 & 78.98 \\
+ULMFiT-100K  &  83.95 & 75.17 & \textbf{79.32} \\
+fastText &  84.34 & 70.07 & 76.54 \\
 \end{tabular}
 \caption{Classification results of models with different vocabulary sizes on evaluation set.}
 \label{table:results}
 \end{center}
 \end{table}
 
--- TABLE OF TRAINING TIMES FOR DIFFERENT MODELS, PRETRAINING AND FINETUNING, OMIT FINBERT PRETRAINING TIME SINCE ALREADY PRETRAINED --
+fastText's results were achieved by first running it's hyperparameter optimization command to find well-performing parameters after which the final parameters were forked manually.
+The final hyperparameters were a learning rate of 0.05, 25 epochs of training and the usage of word bigrams.
+
+Mainly default hyperparameters were used while training ULMFiT, except the learning rate was found with fast.ai's learning rate finder.
+The underlying AWD-LSTM -architecture was not changed in any way.
+ULMFiT was pretrained and finetuned for 5 and 12 epochs, respectively.
+The finetuning results stopped improving after 8 finetuning epochs.
+
 
 \section{Discussion}\label{Discussion}
+Class imbalance in the training data proved to be a factor for model performance.
+Upsampling by random duplication of positive samples was used to balance the classes, and it seemed to somewhat improve performance.
+
 Even though ELECTRA required more than twice the compute than ULMFiT, it performed worse.
 This could be due to the rather limited size of the clinical training data.
 
 -- SURPRISING RESULTS FROM ULMFIT WRT THE PERFORMANCE OF ELECTRA --
 -- FINBERT IS OKAY THOUGH MODELS TRAINED ON THE ACTUAL DATA PERFORM BETTER --
-FinBERT
+Unfortunately, training FinBERT proved difficult as the finetuned models failed to learn to predict the training data.
+The finetuned model would, depending on hyperparameters, predict only either all positives or all negatives.
+
 -- ELECTRA SEEMS PROMISING --
 -- FUTURE WORK COULD INCLUDE PRETRAINING ON A LARGER CORPUS OF GENERAL MEDICAL TEXT FIRST, THEN FINETUNE TO TASK --
 For future work, pretraining ELECTRA or even BERT on a larger, general medical text corpus before finetuning on domain data could yield overall improvements to diagnosis code classifiers.

@@ -12,115 +12,115 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Text classification}{2}% 
+\contentsline {chapter}{\numberline {2}Text classification}{3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Preprocessing}{3}% 
+\contentsline {section}{\numberline {2.1}Preprocessing}{4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Features of words}{4}% 
+\contentsline {subsection}{\numberline {2.1.1}Features of words}{5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Features of text}{4}% 
+\contentsline {subsection}{\numberline {2.1.2}Features of text}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Tokenization}{5}% 
+\contentsline {subsection}{\numberline {2.1.3}Tokenization}{6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{SentencePiece}{5}% 
+\contentsline {subsubsection}{SentencePiece}{7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Other tokenizers}{7}% 
+\contentsline {section}{\numberline {2.2}Text classifiers}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Text classifiers}{7}% 
+\contentsline {subsection}{\numberline {2.2.1}Naive Bayes}{8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Naive Bayes}{7}% 
+\contentsline {subsection}{\numberline {2.2.2}Nearest Neighbor Classifier}{9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Nearest Neighbor Classifier}{8}% 
+\contentsline {subsection}{\numberline {2.2.3}Support Vector Machine}{10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Support Vector Machine}{8}% 
+\contentsline {subsection}{\numberline {2.2.4}Decision Trees}{11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Decision Trees}{10}% 
+\contentsline {subsection}{\numberline {2.2.5}Artificial neural network}{12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.5}Artificial neural network}{11}% 
+\contentsline {section}{\numberline {2.3}Evaluation}{13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Evaluation}{12}% 
+\contentsline {chapter}{\numberline {3}Deep learning in natural language processing}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Deep learning in natural language processing}{15}% 
+\contentsline {section}{\numberline {3.1}Transfer learning}{16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Transfer learning}{15}% 
+\contentsline {subsection}{\numberline {3.1.1}Language modeling}{17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Language modeling}{16}% 
+\contentsline {subsection}{\numberline {3.1.2}Embeddings}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Embeddings}{17}% 
+\contentsline {subsubsection}{Word2Vec}{18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Word2Vec}{17}% 
+\contentsline {subsubsection}{GLoVe}{19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{GLoVe}{18}% 
+\contentsline {subsubsection}{fastText}{19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{fastText}{18}% 
+\contentsline {section}{\numberline {3.2}Training}{20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Training}{19}% 
+\contentsline {subsection}{\numberline {3.2.1}Loss functions}{20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Loss functions}{19}% 
+\contentsline {subsubsection}{Binary cross entropy loss}{20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Binary cross entropy loss}{19}% 
+\contentsline {subsubsection}{Categorical cross-entropy loss}{21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Categorical cross-entropy loss}{20}% 
+\contentsline {subsubsection}{Ranking losses}{22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ranking losses}{21}% 
+\contentsline {subsection}{\numberline {3.2.2}Stochastic Gradient Descent}{22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Stochastic Gradient Descent}{21}% 
+\contentsline {section}{\numberline {3.3}Architectures}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Architectures}{22}% 
+\contentsline {subsection}{\numberline {3.3.1}Recurrent Neural Network}{23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Recurrent Neural Network}{22}% 
+\contentsline {subsection}{\numberline {3.3.2}LSTM}{25}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}LSTM}{24}% 
+\contentsline {subsection}{\numberline {3.3.3}Transformer}{27}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Transformer}{26}% 
+\contentsline {subsection}{\numberline {3.3.4}Other architectures}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Other architectures}{29}% 
+\contentsline {subsubsection}{Autoencoder}{31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Autoencoder}{29}% 
+\contentsline {subsubsection}{Convolutional Neural Network}{32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Convolutional Neural Network}{30}% 
+\contentsline {section}{\numberline {3.4}Modern models}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Modern models}{32}% 
+\contentsline {subsection}{\numberline {3.4.1}ULMFiT}{33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}ULMFiT}{32}% 
+\contentsline {subsection}{\numberline {3.4.2}BERT}{35}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}BERT}{33}% 
+\contentsline {subsection}{\numberline {3.4.3}ELECTRA}{36}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}ELECTRA}{35}% 
+\contentsline {chapter}{\numberline {4}Medical report document classification}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Medical report document classification}{36}% 
+\contentsline {section}{\numberline {4.1}Problem definition}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Problem definition}{36}% 
+\contentsline {section}{\numberline {4.2}Data}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Data}{37}% 
+\contentsline {subsection}{\numberline {4.2.1}Medical reports}{38}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Medical reports}{37}% 
+\contentsline {subsection}{\numberline {4.2.2}General Finnish}{39}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}General Finnish}{37}% 
+\contentsline {section}{\numberline {4.3}Compute resources}{39}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Compute resources}{38}% 
+\contentsline {subsection}{\numberline {4.3.1}CSC}{40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}CSC}{38}% 
+\contentsline {subsubsection}{Puhti}{40}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Puhti}{38}% 
+\contentsline {subsubsection}{Slurm}{41}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Slurm}{39}% 
+\contentsline {subsection}{\numberline {4.3.2}VSSHP Blackbird}{41}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}VSSHP Blackbird}{39}% 
+\contentsline {subsection}{\numberline {4.3.3}Methods}{41}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Methods}{40}% 
+\contentsline {subsubsection}{ULMFiT}{41}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ULMFiT}{40}% 
+\contentsline {subsubsection}{ELECTRA}{42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ELECTRA}{40}% 
+\contentsline {subsubsection}{BERT}{42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BERT}{40}% 
+\contentsline {subsubsection}{fastText}{42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Results}{40}% 
+\contentsline {section}{\numberline {4.4}Results}{43}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Discussion}{41}% 
+\contentsline {section}{\numberline {4.5}Discussion}{44}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{43}% 
+\contentsline {chapter}{\numberline {5}Conclusion}{45}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{44}% 
+\contentsline {chapter}{References}{46}% 
 \babel@toc {english}{}

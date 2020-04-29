@@ -1,24 +1,24 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'thesis.blg'
-[39] biber-darwin:315> INFO - === Mon Apr 27, 2020, 12:50:40
-[60] Biber.pm:371> INFO - Reading 'thesis.bcf'
-[154] Biber.pm:889> INFO - Found 51 citekeys in bib section 0
-[165] Biber.pm:4093> INFO - Processing section 0
-[175] Biber.pm:4254> INFO - Looking for bibtex format file 'Bibli_zotero.bib' for section 0
-[183] bibtex.pm:1523> INFO - LaTeX decoding ...
-[299] bibtex.pm:1340> INFO - Found BibTeX data source 'Bibli_zotero.bib'
-[327] Utils.pm:193> WARN - ISBN '1947-4040' in entry 'goldberg2017' is invalid - run biber with '--validate_datamodel' for details.
-[348] Utils.pm:193> WARN - ISBN '0360-0300' in entry 'sebastiani2002' is invalid - run biber with '--validate_datamodel' for details.
-[374] Utils.pm:193> WARN - ISBN '978-3-540-64417-0 978-3-540-69781-7' in entry 'lewis1998' is invalid - run biber with '--validate_datamodel' for details.
-[392] Utils.pm:193> WARN - ISBN '978-1-4614-7137-0 978-1-4614-7138-7' in entry 'james2013' is invalid - run biber with '--validate_datamodel' for details.
-[399] Utils.pm:193> WARN - ISBN '1939-1471' in entry 'rosenblatt1958' is invalid - run biber with '--validate_datamodel' for details.
-[476] Utils.pm:193> WARN - ISBN '1476-4687' in entry 'lecun2015' is invalid - run biber with '--validate_datamodel' for details.
-[486] Utils.pm:193> WARN - ISBN '1045-9227' in entry 'bengio1994' is invalid - run biber with '--validate_datamodel' for details.
-[490] Utils.pm:193> WARN - ISBN '0899-7667' in entry 'hochreiter1997' is invalid - run biber with '--validate_datamodel' for details.
-[624] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[624] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[624] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[624] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[654] bbl.pm:636> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[674] bbl.pm:739> INFO - Output to thesis.bbl
-[674] Biber.pm:110> INFO - WARNINGS: 8
+[36] biber-darwin:315> INFO - === Wed Apr 29, 2020, 14:08:05
+[62] Biber.pm:371> INFO - Reading 'thesis.bcf'
+[147] Biber.pm:889> INFO - Found 51 citekeys in bib section 0
+[158] Biber.pm:4093> INFO - Processing section 0
+[170] Biber.pm:4254> INFO - Looking for bibtex format file 'Bibli_zotero.bib' for section 0
+[178] bibtex.pm:1523> INFO - LaTeX decoding ...
+[283] bibtex.pm:1340> INFO - Found BibTeX data source 'Bibli_zotero.bib'
+[310] Utils.pm:193> WARN - ISBN '1947-4040' in entry 'goldberg2017' is invalid - run biber with '--validate_datamodel' for details.
+[328] Utils.pm:193> WARN - ISBN '0360-0300' in entry 'sebastiani2002' is invalid - run biber with '--validate_datamodel' for details.
+[351] Utils.pm:193> WARN - ISBN '978-3-540-64417-0 978-3-540-69781-7' in entry 'lewis1998' is invalid - run biber with '--validate_datamodel' for details.
+[366] Utils.pm:193> WARN - ISBN '978-1-4614-7137-0 978-1-4614-7138-7' in entry 'james2013' is invalid - run biber with '--validate_datamodel' for details.
+[372] Utils.pm:193> WARN - ISBN '1939-1471' in entry 'rosenblatt1958' is invalid - run biber with '--validate_datamodel' for details.
+[439] Utils.pm:193> WARN - ISBN '1476-4687' in entry 'lecun2015' is invalid - run biber with '--validate_datamodel' for details.
+[448] Utils.pm:193> WARN - ISBN '1045-9227' in entry 'bengio1994' is invalid - run biber with '--validate_datamodel' for details.
+[451] Utils.pm:193> WARN - ISBN '0899-7667' in entry 'hochreiter1997' is invalid - run biber with '--validate_datamodel' for details.
+[575] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[575] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[575] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[575] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[601] bbl.pm:636> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[618] bbl.pm:739> INFO - Output to thesis.bbl
+[619] Biber.pm:110> INFO - WARNINGS: 8

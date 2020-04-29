@@ -13,7 +13,7 @@ Transfer learning refers to the ability of a system to reuse knowledge learned i
 Often the motivation for using transfer learning comes from a lack of labelled training data for a specific task.
 In natural language processing it is widely used to first teach a model on a general language corpus, so that it learns the generalities of the given language (a \textit{language model}), and then fine-tuning the model on some downstream task, such as classification.
 
-All of the introduced NLP-models later in this chapter use transfer learning as each has a clear distinction between the pre-training and finetuning phases in model training where another model's pre-trained state can be transferred to another task and finetuned further for that task.
+All of the introduced NLP-models later in this chapter use transfer learning as each has a clear distinction between the pre-training and fine-tuning phases in model training where another model's pre-trained state can be transferred to another task and fine-tuned further for that task.
 
 \subsection{Language modeling}\label{Language modeling}
 Language modeling is the task of assigning a probability to sentences in a language.
@@ -31,12 +31,11 @@ What this means is that the probability of a sequence of words is defined by the
 In the past, language models made use of the \textit{markov-assumption} that states that the future is independent of the past given the present.
 Nowadays, with modern architectures such as recursive neural networks, this assumption can be abandoned and models can condition on entire sentences while taking word order into account, which has lead to impressive gains in language modeling \cite{goldberg2017}.
 
-Modern NLP networks are often pretrained as language models before they are finetuned for a specific task.
-Pretrained language models can thus be used as a starting point for a model, transferring knowledge from a previous task.
+Modern NLP networks are often pre-trained as language models before they are fine-tuned for a specific task.
+Pre-trained language models can thus be used as a starting point for a model, transferring knowledge from a previous task.
 
 \subsection{Embeddings} \label{Embeddings}
-The transferral of knowledge can be achieved by many means.
-A common case in NLP has been to use word embeddings that encode some information about a word in relation to other words in the feature space.
+A common use case of transfer learning in NLP has been to use word embeddings that encode some information about a word in relation to other words in the feature space.
 Using embeddings is a general way of transferring knowledge as it doesn't depend on any specific model architecture but only on the language used.
 The most popular methods for generating vector representations for words have been Word2Vec \cite{mikolov2013}, GLoVe \cite{pennington2014}, and fastText \cite{bojanowski2017}, all of which will be presented in the next sections.
 
@@ -44,7 +43,7 @@ The most popular methods for generating vector representations for words have be
 Word2Vec is an open-source project based on the work by Mikolov et al. that can be used to train distributed representations of words and phrases \cite{mikolov2013}.
 
 \begin{figure}[t]
-\includegraphics[scale=0.6]{skipgram}
+\includegraphics[scale=0.8]{skipgram}
 \centering
 \caption{Skip-gram model architecture.}
 \label{fig:skipgram}
@@ -80,7 +79,7 @@ A loss function assigns a numerical score to predicted outputs given the expecte
 The function is bounded from below such that the minimum value is only attainable in cases where the prediction is correct.
 The goal of the training algorithm is then to minimize the average loss over all training examples \cite{goldberg2017}.
 
-Attempting to minimize the loss at all costs may result in \textit{overfitting} the training data, thus a soft restriction on the loss function is applied in the form of a \textit{regularization term}, which tracks the "complexity" of parameters.
+Attempting to minimize the loss at all costs may result in \textit{overfitting} the training data, thus a soft restriction on the loss function is applied in the form of a \textit{regularization term}, which tracks the ``complexity'' of parameters.
 Thus the objective of the optimization problem becomes keeping a balance between low loss and low complexity \cite{goldberg2017}.
 
 \subsection{Loss functions}\label{Loss functions}
@@ -166,7 +165,7 @@ Algorithms such as SGD+momentum \cite{polyak1964} are variants of SGD where the 
 \subsection{Recurrent Neural Network} \label{Recurrent Neural Network}
 
 \begin{figure}[t]
-\includegraphics[scale=0.7]{rnnloop}
+\includegraphics[scale=1]{rnnloop}
 \centering
 \caption{An RNN-module which illustrates the recurrent nature of the model}
 \label{fig:rnnloop}
@@ -176,6 +175,12 @@ Recurrent Neural Networks (RNN) are networks that process an input sequence one 
 This approach has been proven to work well with tasks that contain sequential input such as speech, language and music \cite{lecun2015}.
 Figure \ref{fig:rnnloop} shows the basic methodology behind an RNN: a chunk of neural network, A, looks at the input $x_t$ and outputs a value $h_t$. The output value is looped back as a second input value which allows for information to be passed from one step to the other.
 
+\begin{figure}[t]
+\includegraphics[scale=0.9]{rnn}
+\centering
+\caption{The insides of an RNN}
+\label{fig:rnn}
+\end{figure}
 
 Figure \ref{fig:rnn} shows a visualization of the insides of an RNN module which is quite simple in practice. $x_t$ represents an input at timestep $t$, $tanh$ is a function that returns the hyperbolic tangent of the input and $h_t$ is the hidden state of the network at timestep $t$.
 First the hidden state from the previous timestep and the current input value are added to each other after which the sum is fed into the $tanh$ function.
@@ -187,17 +192,11 @@ The training of an RNN happens by using a variant of backpropagation called \tex
 The backward gradient update pass is thus also backward in time and recursively computes the required gradients with the saved activations.
 It is easy to see how this works when the different timesteps of an RNN are unrolled and displayed as if they combine to make a single neural network with multiple layers (fig \ref{fig:rnn}).
 
-\begin{figure}[t]
-\includegraphics[scale=0.4]{rnn}
-\centering
-\caption{An unrolled RNN}
-\label{fig:rnn}
-\end{figure}
 
 RNNs have difficulties maintaining long-term dependencies when processing lengthy input sequences that originates from the \textit{vanishing gradients} problem \cite{bengio1994}:
 During backpropagation gradients, with which the weights of the network are updated, change as they are applied backwards through time.
 A small change to a layer before means an even smaller change in the current layer.
-On the contrary, gradients with big changes tend to "blow up".
+On the contrary, gradients with big changes tend to ``blow up''.
 This means that the earlier layers in the network either stop learning since they only receive small gradient updates or their weights oscillate due to big changes \cite{hochreiter1997}.
 In an RNN this problem is magnified due to backpropagation being applied to each time step.
 
@@ -207,7 +206,7 @@ LSTM was designed to combat the vanishing gradients problem that is especially p
 LSTMs work exceptionally well on a large variety of problems and are widely used nowadays.
 
 \begin{figure}[t]
-\includegraphics[scale=0.4]{lstm}
+\includegraphics[scale=0.9]{lstm}
 \centering
 \caption{Long short-term memory network}
 \label{fig:lstm}
@@ -229,7 +228,7 @@ One popular variant of LSTM introduced by Gers \& Schmidhuber \cite{gers2000a} a
 Another variant called the \textbf{Gated Recurrent Unit} (GRU, figure \ref{fig:gru}), introduced by Cho, et al. \cite{cho2014}, simplifies the model by combining the forget and input gates into a single update gate.
 
 \begin{figure}[t]
-\includegraphics[scale=0.4]{gru}
+\includegraphics[scale=0.9]{gru}
 \centering
 \caption{Gated Recurrent Unit}
 \label{fig:gru}
@@ -240,21 +239,20 @@ RNNs, as presented before, are inherently sequential in nature.
 They take an input at timestep $t$ and compute a hidden state $h_t$ with knowledge from the previous hidden state $h_{t-1}$.
 This sequentiality prohibits efficient parallelization within training examples since one has to come before the other in training.
 Parallelization across examples is also critically constrained by memory at longer sequence lengths.
-In addition to this, RNNs suffer from the so-called \textit{vanishing gradient problem} which is exacerbated at longer sequence lengths.
-\cite{vaswani2017}
+In addition to this, RNNs suffer from the so-called \textit{vanishing gradient problem} which is exacerbated at longer sequence lengths \cite{vaswani2017}.
 
 Attention is a mechanism that allows the modeling of dependencies without regard for distance in input or output sequences.
 It has been used in conjunction with recurrent neural networks to achieve good results, but using it with RNNs somewhat limits the power of attention since the model is still constrained by the aforementioned problems of RNNs.
-Thus Vaswani et al. proposed a novel architecture in 2017, the Transformer, in the paper \textit{Attention is all you need}, to combat these limitations.
+Thus Vaswani et al. proposed a novel architecture in 2017, the Transformer, to combat these limitations.
 The Transformer has been the foundation of neural networks that have achieved state-of-the-art results in various language-related tasks in the last couple of years \cite{vaswani2017}.
 
 The Transformer consists of an encoder, which maps an input sequence of tokens to a sequence of continuous representations, and a decoder, which takes a continuous representation and generates an output sequence.
 The output sequence is generated one token at a time while taking the previous generated tokens as additional input.
 
 \begin{figure}[t]
-\includegraphics[scale=0.4]{transformer}
+\includegraphics[scale=0.5]{transformer}
 \centering
-\caption{The Transformer, from the paper \textit{Attention is all you need} \cite{vaswani2017}}
+\caption{The Transformer, from Vaswani et al. 2017 \cite{vaswani2017}}
 \label{fig:transformer}
 \end{figure}
 
@@ -307,7 +305,7 @@ Because the model has to prioritize which aspects of the input should be copied,
 
 
 \begin{figure}[t]
-\includegraphics[scale=0.6]{autoencoder}
+\includegraphics[scale=1]{autoencoder}
 \centering
 \caption{The autoencoder}
 \label{fig:autoencoder}
@@ -325,6 +323,12 @@ For natural language processing, Variational Autoencoders \cite{kingma2014} have
 
 
 \subsubsection{Convolutional Neural Network}\label{CNN}
+\begin{figure}[t]
+\includegraphics[scale=0.55]{cnn}
+\centering
+\caption{A convolutional neural network for classification}
+\label{fig:cnn}
+\end{figure}
 Convolutional Neural Networks (CNN) are networks that incorporate convolutional and pooling layers into a neural network.
 CNN's have four key ideas that take advantage of the properties of signals: shared weights, pooling, local connections and the use of many layers.
 A typical CNN (Figure \ref{fig:cnn}) is structured as a series of stages.
@@ -337,12 +341,6 @@ The role of the pooling layers is to merge semantically similar features into on
 They reduce the dimension of the representation in an effort to make the network more robust against small shifts and distortions in the data.
 Stacks of convolutions and pooling are finally followed by fully-connected layers that are trained to output the result \cite{lecun2015}.
 
-\begin{figure}[t]
-\includegraphics[scale=0.4]{cnn}
-\centering
-\caption{A convolutional neural network for classification}
-\label{fig:cnn}
-\end{figure}
 
 Convolutional neural networks have been used for a multitude of tasks in natural language processing in the past such as sentiment classification and sentence modeling \cite{kalchbrenner2014}.
 
@@ -350,23 +348,23 @@ Convolutional neural networks have been used for a multitude of tasks in natural
 \section{Modern models} \label{Modern models}
 
 \subsection{ULMFiT} \label{ULMFiT}
-Universal Language Model Finetuning (ULMFiT) is a transfer learning based methodology for text classification which posted state-of-the-art results when it was published in 2018.
-It consists of firstly pretraining a language model on a general-domain corpus and then finetuning it on a classification task.
-This idea of first pretraining on a large general corpus and then finetuning it has been tried before, but has proven to be a challenging task due to it requiring millions of in-domain documents to achieve good performance \cite{dai2015}.
+Universal Language Model fine-tuning (ULMFiT) is a transfer learning based methodology for text classification which posted state-of-the-art results when it was published in 2018.
+It consists of firstly pre-training a language model on a general-domain corpus and then fine-tuning it on a classification task.
+This idea of first pre-training on a large general corpus and then fine-tuning it has been tried before, but has proven to be a challenging task due to it requiring millions of in-domain documents to achieve good performance \cite{dai2015}.
 With ULMFiT Howard et al. proposed novel training techniques to make the training feasible even with a small corpus \cite{howard2018}.
 
 ULMFiT is a \textit{universal} method in that it uses a single architecture and training process, requires no custom feature engineering, works across tasks with variable document sizes and label types, and doesn't require additional in-domain documents or labels \cite{howard2018}.
 
 ULMFiT uses a 3-layer weight-dropped long shot-term memory (AWD-LSTM) network, proposed by Merity et al. \cite{merity2017}, which is a recurrent neural network (RNN).
-AWD-LSTM is a vanilla LSTM with various regularization and optimization strategies such as DropConnect \cite{wan}, which prevents overfitting by randomly dropping connections between the recurrent hidden to hidden weight matrices, and averaged gradient descent as its optimization algorithm.
+AWD-LSTM is a vanilla LSTM with various regularization and optimization strategies such as DropConnect \cite{wan}, which prevents over-fitting by randomly dropping connections between the recurrent hidden to hidden weight matrices, and averaged gradient descent as its optimization algorithm.
 
-The training begins with pretraining a general-domain language model with unlabeled text data to capture the general properties of language.
+The training begins with pre-training a general-domain language model with unlabeled text data to capture the general properties of language.
 This initial training step is the most expensive in the whole method but only needs to be done once.
 
-After the general language model is trained, it is finetuned with the target task data.
-This finetuning converges faster than the initial pretraining since the model needs to only adapt to the idiosyncrasies of the finetuning data.
+After the general language model is trained, it is fine-tuned with the target task data.
+This fine-tuning converges faster than the initial pre-training since the model needs to only adapt to the idiosyncrasies of the fine-tuning data.
 This allows the training of robust language models even with small datasets.
-ULMFiT uses \textit{discriminative fine-tuning} and \textit{slanted triangular learning rates} for the finetuning step of the language model.
+ULMFiT uses \textit{discriminative fine-tuning} and \textit{slanted triangular learning rates} for the fine-tuning step of the language model.
 With discriminative fine-tuning, instead of using a single learning rate for all the layers in the model, each layer is fine-tuned with a learning rate of its own.
 The motivation for this comes from the fact that different layers capture different types of information, thus each layer should be fine-tuned for different amounts.
 With slanted triangular learning rates, the learning rate is first linearly increased in order to get the model to quickly converge to a suitable region, and then linearly decreased to refine its parameters.
@@ -382,21 +380,21 @@ Although outshined by BERT and other huge transformer-based models, ULMFiT is mu
 
 \subsection{BERT} \label{BERT}
 Bidirectional Encoder Representations from Transformers (BERT) is a language representation model based on the Transformer \cite{vaswani2017} architecture (subsection \ref{Transformer}).
-It uses a \textit{fine-tuning} based approach, in which all the pretrained parameters are finetuned when applying pre-trained language representations to down-stream tasks, as opposed to a \textit{feature-based} approach, where the pre-trained representations are only used as additional features in a task-specific architecture.
+It uses a \textit{fine-tuning} based approach, in which all the pre-trained parameters are fine-tuned when applying pre-trained language representations to down-stream tasks, as opposed to a \textit{feature-based} approach, where the pre-trained representations are only used as additional features in a task-specific architecture.
 
 Both the fine-tuning and feature-based approach share the same objective function during pre-training of learning general language representations by using unidirectional language models.
-BERT uses a \textit{masked language model} (MLM) pre-training objective to achieve bidirectionality in context, thus allowing the model to see both left and right of the input token when training.
+BERT uses a \textit{masked language model} (MLM) pre-training objective to achieve bi-directionality in context, thus allowing the model to see both left and right of the input token when training.
 MLM randomly masks tokens in the input, and the objective is to predict the vocabulary id of the masked token based on its context.
 BERT also uses a \textit{next sentence prediction} (NSP) task that jointly pre-trains text-pair representations \cite{devlin2019}.
 
 As with ULMFiT, BERT also has a unified architecture across different tasks with a minimal difference between the pre-trained architecture and the final downstream one.
 BERT's architecture is almost identical with the Transformer described in section \ref{Transformer}, the difference comes mainly in the number of layers (Transformer blocks), denoted as $L$, hidden size, denoted as $H$ and the number of attention heads, denoted as $A$.
-Results for BERT performace was primarily reported for two sizes: $BERT_{BASE}$ (L=12, H=768, A=12, total parameters=110M) and $BERT_{LARGE}$ (L=24, H=1024, A=16, total parameters=340M).
+Results for BERT performance was primarily reported for two sizes: $BERT_{BASE}$ (L=12, H=768, A=12, total parameters=110M) and $BERT_{LARGE}$ (L=24, H=1024, A=16, total parameters=340M).
 
 BERT uses WordPiece embeddings \cite{wu2016}, essentially similar to SentencePiece embeddings (section \ref{SentencePiece}).
 Pre-training happens by the two aforementioned unsupervised tasks: Masked language modeling and next sentence prediction.
 
-In MLM, 15\% of all WordPiece tokens are randomly chosen and each chosen token has an 80\% chance to actually be masked, a 10\% chance to be replaced with a random token, and a 10\% chacne to stay unchanged.
+In MLM, 15\% of all WordPiece tokens are randomly chosen and each chosen token has an 80\% chance to actually be masked, a 10\% chance to be replaced with a random token, and a 10\% chance to stay unchanged.
 The reason for not always masking the chosen tokens is because the [MASK] token does not appear during fine-tuning, causing a mismatch between the two steps otherwise.
 
 In NSP, training examples consist of two sentences $A$ and $B$.
@@ -406,11 +404,11 @@ With the use of the Transformer-architecture, WordPiece embeddings and two pre-t
 
 \subsection{ELECTRA} \label{ELECTRA}
 Efficiently Learning an Encoder that Classifies Token Replacements Accurately (ELECTRA) is a further elaboration on the BERT model by Clark, et al. \cite{clark2020}
-The primary motivation for ELECTRA is making pretraining more efficient given that training a full-sized BERT or any derivation of it (ALBERT, RoBERTa etc.) requires a considerable amount of compute and training data.
-As described in the BERT chapter (chapter \ref{BERT}), BERT uses masked language modeling as a pretraining objective.
+The primary motivation for ELECTRA is making pre-training more efficient given that training a full-sized BERT or any derivation of it (ALBERT, RoBERTa etc.) requires a considerable amount of compute and training data.
+As described in the BERT chapter (chapter \ref{BERT}), BERT uses masked language modeling as a pre-training objective.
 This MLM is inherently quite inefficient in it's usage of the training data; only the masked tokens, approximately 15\% of the data, needs to be predicted.
-As an alternative, ELECTRA proposes \textit{replaces token detection}, a pretraining task in which the model has to predict whether or not a token is the original token in the corpus or if it has been swapped for a token generated by a small masked language model.
-This also solves the mismatch in BERT where the model sees [MASK] tokens during pretraining but not during finetuning.
+As an alternative, ELECTRA proposes \textit{replaces token detection}, a pre-training task in which the model has to predict whether or not a token is the original token in the corpus or if it has been swapped for a token generated by a small masked language model.
+This also solves the mismatch in BERT where the model sees [MASK] tokens during pre-training but not during fine-tuning.
 ELECTRA trains the network as a discriminator rather than a generator, since it is predicting whether an input is corrupted or not.
 This way ELECTRA learns from all the input tokens, rather than a small subset of them.
 
