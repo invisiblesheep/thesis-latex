@@ -185,7 +185,7 @@
   \begin{switch}{\p@btype}
     \case{tkk}{\langchoose{#1}{TkK-tutkielma}{Bachelor's Thesis}}%
     \case{luk}{\langchoose{#1}{LuK-tutkielma}{Bachelor's Thesis}}%
-    \case{gradu}{\langchoose{#1}{Pro gradu -tutkielma}{Master of Science Thesis}}%
+    \case{gradu}{\langchoose{#1}{Pro gradu -tutkielma}{Master's thesis}}%
     \case{di}{\langchoose{#1}{Diplomityö}{Master of Science Thesis}}%
     \default{\p@btype}%
   \end{switch}}
@@ -277,19 +277,19 @@
 }
 
 %% Macro for hiding the chapter texts
-\ifutuftthesis@hidechapters
-  \renewcommand{\@chapapp}{\relax}
-  \renewcommand{\@makechapterhead}[1]{%
-    \vspace*{50\p@}%
-    {\parindent \z@ \raggedright \normalfont
-      \ifnum \c@secnumdepth >\m@ne
-          \huge\bfseries \@chapapp\space \thechapter\space\space
-      \fi
-      \interlinepenalty\@M
-      \Huge \bfseries #1\par\nobreak
-      \vskip 40\p@
-    }}
-\fi
+% \ifutuftthesis@hidechapters
+%   \renewcommand{\@chapapp}{\relax}
+%   \renewcommand{\@makechapterhead}[1]{%
+%     \vspace*{50\p@}%
+%     {\parindent \z@ \raggedright \normalfont
+%       \ifnum \c@secnumdepth >\m@ne
+%           \huge\bfseries \@chapapp\space \thechapter\space\space
+%       \fi
+%       \interlinepenalty\@M
+%       \Huge \bfseries #1\par\nobreak
+%       \vskip 40\p@
+%     }}
+% \fi
 
 %% entry environment
 \newenvironment{entry}[1]{\begin{list}{}{%
@@ -312,7 +312,7 @@
 
   %% the second abstract environment
   %% always in english - just an alias for 'abstract'
-  \newenvironment{abstracten}{\@bstracth{english}}{\@bstractt{english}{\k@ywords}}
+  \newenvironment{abstracten}{\@bstracth{english}}{\@bstractt{english}{\k@ywordstwo}}
 }
 
 %% title page, reuses the standard \maketitle

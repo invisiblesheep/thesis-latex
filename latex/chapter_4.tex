@@ -2,29 +2,28 @@
 
 \section{Problem definition} \label{Problem definition}
 
--- Doctors write medical reports and define the ``label'' aka diagnosis code for it -> might get it wrong or not attach one at all -> automatic classification would be useful. --
-
-
-Since compute resources was a major constraint, only approaches with a reasonable single-gpu training time were considered.
-Thus, ULMFiT, ELECTRA, and FinBERT which was pretrained by Virtanen et al.~\cite{virtanen2019}, were chosen for comparison.
-In addition to comparing the different models with each other, each model --- excluding FinBERT --- was trained multiple times with different vocabulary sizes to see if it impacted the results.
-Word tokens were extracted with SentencePiece after the data had been preprocessed.
+Automatically tagging a medical document with a proper diagnosis code was deemed valuable from the hospital's side.
+To find out if this would be possible, a couple of deep learning -based approaches were chosen to be trained on medical data.
+Since compute resources were a major constraint, only approaches with a reasonable single-gpu training time were considered.
+Thus, a pretrained and finetuned ULMFiT and ELECTRA, and a finetuned FinBERT (pretrained by Virtanen et al.~\cite{virtanen2019}), were chosen for comparison.
+In addition to comparing the different models with each other, each model --- excluding FinBERT, which provided a vocabulary of it's own from pretraining --- was trained multiple times with different sizes of a vocabulary which was extracted from the medical texts to see if vocabulary size meaningfully impacted the results.
+Given the success of BERT and it's WordPiece tokenization in various NLP tasks, SentencePiece was chosen as a tokenizer for ULMFiT as well.
 
 \section{Data} \label{Data}
 \subsection{Medical reports}\label{Medical reports}
 The medical data for the work was provided by Auria services at the Turku university hospital.
-It consists of doctor's statements with corresponding diagnosis codes and other metadata, such as date of visit and health center office, of patients in the Turku-region.
+It consists of doctor's statements with corresponding diagnosis codes and other metadata, such as date of visit and hospital ward, of patients in the Turku-region.
 No metadata was utilized in the training data, only the written text and the corresponding diagnosis code.
 Since the actual diagnosis code for the text appeared often in it, all diagnosis codes in text were masked with a [CODE] token in the training data to prevent the model from learning from them.
 HTML-tags such as <br> were removed in preprocessing and texts that were deemed too short (less than 80 characters) were also removed from the training set.
-After preprocessing, the data consisted of X tokens in Y sentences.
 
-Class balance for the dataset was 85\% negative and 15\% positive samples.
+After extracting the documents that had one of two knee-related diagnosis codes as positive samples, the class balance for the dataset was 85\% negative and 15\% positive samples.
 The dataset was eventually balanced by upsampling the positive samples.
--- GET DATA FOR CLINICAL, TOKENS AND SENTENCES --
+Overall, the data consisted of 175000 documents with varying lengths.
+Token amounts were dependent on the size of the vocabulary used.
 
 \subsection{General Finnish}\label{General Finnish}
-Since receiving access to the actual medical data took some time, the chosen models and code were additionally trained and tested on a general finnish corpus that Virtanen et al. compiled for FinBERT \cite{virtanen2019}.
+Since receiving access to the actual medical data took some time and due to the fact that it was not allowed to be taken out of the hospital, the chosen models and code were additionally trained and tested on a general Finnish corpus that Virtanen et al. compiled for FinBERT \cite{virtanen2019}.
 It is composed from three different sources: news articles, online discussions, and documents crawled from the Finnish internet, and consists of 3.3 billion tokens from 234 million sentences.
 The total size of the corpus is roughly 30 times the size of the Finnish Wikipedia.
 The corpus was extensively preprocessed by filtering out documents that had too high a ratio of digits, uppercase or non-Finnish alphabetic characters, or low average sentence length.
@@ -62,14 +61,19 @@ Second, it provides a framework for starting, executing, and monitoring work on 
 Finally, it manages a queue of pending work to arbitrate the contention for resources~\cite{zotero-176}.
 
 
-\subsection{VSSHP Blackbird} \label{VSSHP Blackbird}
-For training models on the clinical data, access was granted to Blackbird, a computer for artificial intelligence owned by (AURIA/TYKS/VSSHP?) with four Nvidia V100 graphics cards allowing simultaneous training of multiple models.
-Although the architecture could have managed training a medium-sized BERT, it was considered too long of a task to reserve the compute resources for.
+\subsection{Turku University Hospital} \label{Turku University Hospital}
+For training models on the clinical data, access was granted to \textbf{Blackbird}, a computer for artificial intelligence owned by Auria services, with four Nvidia V100 graphics cards allowing simultaneous training of multiple models.
+All training and handling of clinical data happened on this computer which is located in the hospital and behind the hospital firewall in order to ensure that the sensitive data and resulting models did not accidentally or otherwise leak into the outer world.
 
-The workflow on Blackbird consisted of ssh'ing to the linux-based computer, using screen~\cite{zotero-180} to multiplex the connection to multiple shells, and running a training process on each shell.
+
+Although the architecture could have managed training a medium-sized BERT, it was considered too long of a task to reserve the compute resources for.
+Additionally, there wasn't enough domain-specific data for such a task.
+
+
+The workflow on Blackbird consisted of connecting to the linux-based computer using secure shell (SSH), using screen~\cite{zotero-180} to multiplex the connection to multiple shells, and running a training process on each shell.
 Jupyter notebooks~\cite{zotero-182} were also used on the machine for data visualization and prototyping, and were accessed locally by using ssh tunneling~\cite{zotero-184}.
 
-\subsection{Methods}\label{Methods}
+\section{Methods}\label{Methods}
 \subsubsection{ULMFiT}\label{ULMFiT}
 The fastai v1 -library was used for implementing ULMFiT\footnote{https://github.com/fastai/fastai}.
 As the library's support for SentencePiece\footnote{https://github.com/google/sentencepiece} was at the time quite limited, a considerable amount of custom code had to be written to incorporate the sub-word tokenizer in the training process.
@@ -80,28 +84,31 @@ For training ELECTRA, the pretraining and finetuning scripts were used from the 
 The code was forked in order to make some changes to it regarding finetuning and evaluation parameters\footnote{https://github.com/invisiblesheep/electra}.
 
 \subsubsection{BERT}\label{BERT}
-The code for finetuning FinBERT was taken from the official BERT github repository\footnote{https://github.com/google-research/bert}, and FinBERT itself can be found from\footnote{https://github.com/TurkuNLP/FinBERT}.
+For finetuning FinBERT, HuggingFace's transformers library was ultimately used \cite{wolf2020}.
+It provides pretraining and finetuning scripts for a multitude of transformer-based models, such as BERT, XLNet and RoBERTa.
+% The code for finetuning FinBERT was taken from the official BERT github repository\footnote{https://github.com/google-research/bert}, and FinBERT itself can be found from\footnote{https://github.com/TurkuNLP/FinBERT}.
 
 \subsubsection{fastText}\label{fastText}
 fastText\footnote{https://github.com/facebookresearch/fastText} was trained as a baseline model.
 In addition to providing word embeddings, fastText can be used as a classifier as well.
 fastText obtains document vectors by averaging word embeddings after which it uses multinomial logistic regression for classification.
-A probability distribution over classes is gained as a result after applying the softmax function to the results.
+As with most neural network classifiers, a probability distribution over classes is gained as a result after applying the softmax function to the results.
 It uses a bunch of tricks, such as hierarchical softmax, to up the speed of training the model.
 Thus it's an order of magnitude faster to train than a deep learning model but it still is somewhat competitive with one.
 
 \section{Results}\label{Results}
 A binary classifier was built to identify texts that had one of two knee-related diagnosis codes from the training data.
+The data was divided into training, validation and test sets with a 80--10--10 split, and stratified so that each set had an equal percentage wise representation of the classes.
 
 \begin{table}[t]
 \begin{center}
 \begin{tabular}{lccc}
          & Precision & Recall & F1 \\
         \hline
-FinBERT &      ---   &    --- &  ---   \\
-ELECTRA-30K    &     71.90 & 61.50 & 66.29 \\
-ELECTRA-50K  &      70.65 & 74.38 & 72.47 \\
-ELECTRA-100K  &     72.60 & 65.27 & 68.74 \\
+FinBERT &      68.02   &    74.16 &  70.96   \\
+ELECTRA-30K    &     66.06 & 73.72 & 69.68 \\
+ELECTRA-50K  &      69.29 & 76.19 & 72.58 \\
+ELECTRA-100K  &     69.64 & 76.14 & 72.74 \\
 ULMFiT-30K  &    84.28 & 72.54 & 77.97 \\
 ULMFiT-50K  &   82.91 & 75.41 & 78.98 \\
 ULMFiT-100K  &  83.95 & 75.17 & \textbf{79.32} \\
@@ -120,20 +127,41 @@ The underlying AWD-LSTM -architecture was not changed in any way.
 ULMFiT was pretrained and finetuned for 5 and 12 epochs, respectively.
 The finetuning results stopped improving after 8 finetuning epochs.
 
+For finetuning ELECTRA, the best and final results were obtained with a maximum sequence length of 256, a learning rate of $10^{-4}$ and 12 epochs of training.
+For FinBERT, final hyperparameters were a maximum sequence length of 256, learning rate of $2e^{-5}$ and 10 epochs.
+
+This sequence length parameter is particular to the transformer-model.
+It defines the maximum amount of tokens that can be input into the network at one time.
+Given that the input documents for classification were oftentimes quite a bit longer than this imposed restriction, documents were chopped to multiple chunks with this maximum token amount to get around it.
+
+\subsection{Tools}\label{Tools}
+For training these models, a number of scripts were written and documented for the hospital to use.
+The scripts comprise of a combination of shell and python scripts.
+A general preprocessing script processes and splits the data of a specific given format of medical text data into a training and evaluation set.
+Separate scripts are provided for pretraining and finetuning the various models.
+
 
 \section{Discussion}\label{Discussion}
-Class imbalance in the training data proved to be a factor for model performance.
-Upsampling by random duplication of positive samples was used to balance the classes, and it seemed to somewhat improve performance.
+As seen from the results, the transformer-based models --- ELECTRA and FinBERT --- performed the worst of all the models.
+These results should be taken with a grain of salt since the dataset wasn't quite large enough to fully utilize the power of these models.
+It is suspected that a major factor for this lack of performance is due to the lack of a proper general medical text dataset that could be utilized in the pretraining of such models.
+Additionally, since these transformers have a maximum sequence length for input tokens which prohibits the utilization of all the tokens in longer texts, the lengthier documents --- which there were a lot of --- in the training set could not be fully utilized.
+Thus for FinBERT and ELECTRA, a major improvement came from increasing the maximum sequence length.
 
-Even though ELECTRA required more than twice the compute than ULMFiT, it performed worse.
-This could be due to the rather limited size of the clinical training data.
 
--- SURPRISING RESULTS FROM ULMFIT WRT THE PERFORMANCE OF ELECTRA --
--- FINBERT IS OKAY THOUGH MODELS TRAINED ON THE ACTUAL DATA PERFORM BETTER --
-Unfortunately, training FinBERT proved difficult as the finetuned models failed to learn to predict the training data.
-The finetuned model would, depending on hyperparameters, predict only either all positives or all negatives.
+Given that the relevant text regarding the diagnosis of the document seemed to usually reside at the end of a document, encapsulating this information in the training samples for ELECTRA and BERT perhaps needs a different approach than chunking to maximum size in which the relevant information only appears in the later chunks of a document.
+This means that the previous chunks in a document can possibly negatively impact the performance of the classifier as well by making it focus on unimportant details.
 
--- ELECTRA SEEMS PROMISING --
--- FUTURE WORK COULD INCLUDE PRETRAINING ON A LARGER CORPUS OF GENERAL MEDICAL TEXT FIRST, THEN FINETUNE TO TASK --
-For future work, pretraining ELECTRA or even BERT on a larger, general medical text corpus before finetuning on domain data could yield overall improvements to diagnosis code classifiers.
+
+The superior results of ULMFiT can also be due to the compatibility of LSTM-networks with long texts.
+Contrary to the transformers which get as input the whole document, LSTM's are recurrently fed tokens one after the other until the whole document has gone through the network.
+Thus, LSTM's have no limit in how long of a text it can process which proved to be an important feature with this dataset.
+Additionally, as the important features of text were usually at the end of a document, the LSTM saw these features last and thus they had a relatively bigger impact on the network's parameters.
+
+
+Class imbalance in the training data was suspected to be a factor for model performance, thus positive examples were upsampled by random duplication to balance the classes which overall somewhat improved the performance of all the models.
+Comparing the different vocabulary sizes, the results clearly show that a bigger vocabulary size worked better than a smaller one on this dataset, which could be due to the fact that the data --- being medical text --- included a lot of medical terms rarely found in everyday language.
+
+For future work, pretraining ELECTRA or BERT on a larger, general medical text corpus before finetuning on domain data could yield overall improvements to diagnosis code classifiers.
+Pretraining on a larger dataset would give the models a good starting point for finetuning due to the fact that the models would then have a proper representation of the medical textual data domain, thus increasing the likelihood that the models generalize better.
 Additionally, comparing the performance of the models with different amounts of training data would give insight into the limits of ULMFiT and ELECTRA.

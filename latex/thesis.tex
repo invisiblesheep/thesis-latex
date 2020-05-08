@@ -1,5 +1,5 @@
-\documentclass[a4paper,12pt,language=english,version=draft,hidechapters=true,includereferences=false,realtimesnewroman=false,sharelatex=false,emptyfirstpages=true]{utuftthesis}
-\setcounter{secnumdepth}{2}
+\documentclass[a4paper,12pt,language=english,version=final,hidechapters=true,includereferences=false,realtimesnewroman=false,sharelatex=false,emptyfirstpages=true]{utuftthesis}
+% \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
 
 \addbibresource{Bibli_zotero.bib}
@@ -69,13 +69,15 @@ Relies on utuftthesis.cls for the document class definitions.
 
 \pubyear{2020}
 
-\pubmonth{4}
+\pubmonth{5}
 
 \publaben{Computer Science}
+% \publab{Tietojenkäsittelytiede}
 
 \pubtype{gradu}
-\title{Deep learning in medical report classification}
+\title{Deep learning in medical document classification}
 \author{Tuomas Jokioja}
+\supervisors{Hans Moen,Filip Ginter}
 
 \maketitle
 \input{abstract.tex}
@@ -88,10 +90,10 @@ Relies on utuftthesis.cls for the document class definitions.
 \tableofcontents
 
 % if you want a list of figures
-%\listoffigures
+\listoffigures
 
 % if you want a list of tables
-%\listoftables
+% \listoftables
 
 % 'list of acronyms'
 %   - you may not need this at all
@@ -101,9 +103,9 @@ Relies on utuftthesis.cls for the document class definitions.
 %   - the secnumdepth trickery is needed because acronyms are as a
 %     standard chapter and we are faking '\listofacronyms'
 %
-%\setcounter{secnumdepth}{-1}
-%\input{your acronym chapter's file name}
-%\setcounter{secnumdepth}{2}% setup page numbering, page counter, etc.%
+\setcounter{secnumdepth}{-1}
+\input{acronyms.tex}
+\setcounter{secnumdepth}{2}% setup page numbering, page counter, etc.%
 
 \input{introduction.tex}
 \input{chapter_2.tex}

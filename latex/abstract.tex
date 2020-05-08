@@ -1,29 +1,33 @@
-
-\keywords{tähän, lista, avainsanoista}
-
-\keywordstwo{here, a, list, of, keywords}
+\keywords{syväoppiminen, tekstinluokittelu, lääketieteellinen data}
 \begin{abstract}
-Tarkempia ohjeita tiivistelmäsivun laadintaan läytyy opiskelijan yleisoppaasta,
-josta alla lyhyt katkelma.
+Tekstipohjaista tietoa tuotetaan vuosi vuodelta enemmän, mikä puolestaan on lisännyt tarvetta automaattiselle tekstinkäsittelylle.
+Täten myös automaattisia tekniikoita luonnollisen kielen käsittelyyn on enenevissä määrin tutkittu ja kehitetty, erityisesti viimeisen vuosikymmenen aikana.
+Tämä on johtanut huomattaviin parannuksiin erilaisissa luonnollisen kielen käsittelytehtävissä.
+Suuri läpimurto on ollut valtavilla tietomäärillä koulutettujen syvien hermoverkkojen käyttäminen.
+Tällaisten menetelmien käyttö alueilla, joilla aika on arvokasta, kuten lääketiede, voisi tarjota huomattavaa lisäarvoa.
 
-Bibliografisten tietojen jälkeen kirjoitetaan varsinainen tiivistelmä.
-Sen on oletettava, että lukijalla on yleiset tiedot aiheesta. Tiivistelmän
-tulee olla ymmärrettävissä ilman tarvetta perehtyä koko tutkielmaan.
-Se on kirjoitettava täydellisinä virkkeinä, väliotsakeluettelona.
-On käytettävä vakiintuneita termejä. Viittauksia ja lainauksia tiivistelmään
-ei saa sisällyttää, eikä myäskään tietoja tai väitteitä, jotka eivät
-sisälly itse tutkimukseen. Tiivistelmän on oltava mahdollisimman ytimekäs
-n. 120–250 sanan pituinen itsenäinen kokonaisuus, joka mahtuu ykkäsvälillä
-kirjoitettuna vaivatta tiivistelmäsivulle. Tiivistelmässä tulisi ilmetä
-mm.  tutkielman aihe tutkimuksen kohde, populaatio, alue ja tarkoitus
-käytetyt tutkimusmenetelmät (mikäli tutkimus on luonteeltaan teoreettinen
-ja tiettyyn kirjalliseen materiaaliin, on mainittava tärkeimmät lähdeteokset;
-mikäli on luonteeltaan empiirinen, on mainittava käytetyt metodit)
-keskeiset tutkimustulokset tulosten perusteella tehdyt päätelmät ja
-toimenpidesuositukset asiasanat
+Tässä tutkielmassa annetaan yleiskuva luonnollisesta kielenkäsittelystä syväoppimiseen ja tekstinluokitteluun liittyen.
+Lisäksi erilaisten syväoppivien menetelmien käytettävyys arvioitiin kouluttamalla tekstiluokittelijoita ennustamaan lääketieteellisten dokumenttien diagnoosikoodeja.
+Valittuihin menetelmiin kuuluvat syväoppimiseen perustuvat FinBERT, ULMFiT ja ELECTRA, sekä yksinkertaisempi lineaarinen luokittelija fastText.
+
+Tulokset osoittavat, että rajallisella aineistolla lineaariset menetelmät, kuten fastText, toimivat yllättävän hyvin.
+Syväoppimiselle perustuvat menetelmät taasen vaikuttavat toimivan kohtuullisen hyvin, vaikkakin niiden aito potentiaali pitäisi todentaa käyttäen suurempia datajoukkoja.
+Täten jatkotutkimusta syväoppiviin menetelmiin liittyen tarvitaan.
 \end{abstract}
 
+\keywordstwo{deep learning, text classification, medical data }
 \begin{abstracten}
-Second abstract in english (in case the document main language is not english)
-\end{abstracten}
+Text-based data is produced at an ever growing rate each year which has in turn increased the need for automatic text processing.
+Thus, to keep up with the amount of data, automatic natural language processing techniques have also been increasingly researched and developed, especially in the last decade or so.
+This has lead to substantial improvements in various natural language processing tasks.
+A major breakthrough has been the utilization of deep neural networks and massive amounts of data to train them.
+Using such methods in areas where time is valuable, such as the medical field, could provide considerable value.
 
+In this thesis, an overview is given of natural language processing w.r.t deep learning and text classification.
+Additionally, a dataset of medical reports was preprocessed and used to train and evaluate a number of text classifiers in order to define the feasibility of such methods for medical text classification.
+The chosen methods include deep learning -based FinBERT, ULMFiT and ELECTRA, and a simpler linear baseline classifier, fastText.
+
+The results show that with a limited dataset, linear methods like fastText work surprisingly well.
+Deep learning -based methods, on the other hand, seem work reasonably well, and show a lot of potential especially in utilizing larger amounts of training data.
+In order to define the full potential of such methods, further investigation is required with larger datasets.
+\end{abstracten}

@@ -1,7 +1,14 @@
 \chapter{Conclusion} \label{Conclusion}
-In this thesis, an overview is given of natural language processing w.r.t deep learning and text classification, and a dataset of medical reports was preprocessed and used to train a number of text classifiers in order to define the feasibility of such methods for medical text classification.
+In this thesis, an overview is given of natural language processing w.r.t deep learning and text classification.
+Additionally, a dataset of medical reports was preprocessed and used to train a number of text classifiers in order to define the feasibility of such methods for medical text classification.
 
-The results show that even though transformers have been shown to work for pretty much any task, YAYDAYDYA ---
-Additionally, the performance of fastText proved to be surprising good when compared to the more complex and training intensive deep neural networks.
+It was found that the LSTM-based ULMFiT performed the best out of the chosen models, others being ELECTRA, FinBERT and fastText.
+The performance of a simpler method proved to be surprisingly good when compared to the more complex and training intensive deep neural networks.
+This is a promising finding due to the fact that smaller hospitals don't have the resources to train and use the weightier deep neural networks in analyzing their documents.
+Utilizing simpler and lighter models such as fastText levels the playing field and brings the benefits of AI to more people.
 
-For future work, it is suggested that a larger general corpus of medical text is gathered and used to pre-train a deep neural network first in order to improve performance of the various methods such as transformer-based BERT and ELECTRA.
+The lacklustre results of the transformer-based models are advised to be taken with a grain of salt as these approaches are deemed to require further investigation in this domain.
+
+As a results of this thesis, the scripts for training the aforementioned models were compiled and provided to the hospital as tools for preprocessing medical data and pretraining and finetuning various classifiers for different diagnosis codes.
+
+For future work, it is suggested that a larger general corpus of medical text is gathered and used to pre-train a deep neural network first in order to improve performance of the various introduced methods such as transformer-based BERT and ELECTRA.

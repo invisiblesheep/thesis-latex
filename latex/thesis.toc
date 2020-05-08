@@ -10,117 +10,121 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{1}% 
+\contentsline {chapter}{List Of Acronyms}{1}{chapter*.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Text classification}{3}% 
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Preprocessing}{4}% 
+\contentsline {chapter}{\numberline {2}Text classification}{4}{chapter.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Features of words}{5}% 
+\contentsline {section}{\numberline {2.1}Preprocessing}{5}{section.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Features of text}{6}% 
+\contentsline {subsection}{\numberline {2.1.1}Features of words}{6}{subsection.2.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Tokenization}{6}% 
+\contentsline {subsection}{\numberline {2.1.2}Features of text}{7}{subsection.2.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{SentencePiece}{7}% 
+\contentsline {subsection}{\numberline {2.1.3}Tokenization}{7}{subsection.2.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Text classifiers}{8}% 
+\contentsline {subsubsection}{SentencePiece}{8}{section*.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Naive Bayes}{8}% 
+\contentsline {section}{\numberline {2.2}Text classifiers}{9}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Nearest Neighbor Classifier}{9}% 
+\contentsline {subsection}{\numberline {2.2.1}Naive Bayes}{9}{subsection.2.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Support Vector Machine}{10}% 
+\contentsline {subsection}{\numberline {2.2.2}Nearest Neighbor Classifier}{10}{subsection.2.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Decision Trees}{11}% 
+\contentsline {subsection}{\numberline {2.2.3}Support Vector Machine}{11}{subsection.2.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.5}Artificial neural network}{12}% 
+\contentsline {subsection}{\numberline {2.2.4}Decision Trees}{12}{subsection.2.2.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Evaluation}{13}% 
+\contentsline {subsection}{\numberline {2.2.5}Artificial neural network}{13}{subsection.2.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Deep learning in natural language processing}{16}% 
+\contentsline {section}{\numberline {2.3}Evaluation}{14}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Transfer learning}{16}% 
+\contentsline {chapter}{\numberline {3}Deep learning in natural language processing}{17}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Language modeling}{17}% 
+\contentsline {section}{\numberline {3.1}Transfer learning}{18}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Embeddings}{18}% 
+\contentsline {subsection}{\numberline {3.1.1}Language modeling}{18}{subsection.3.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Word2Vec}{18}% 
+\contentsline {subsection}{\numberline {3.1.2}Embeddings}{19}{subsection.3.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{GLoVe}{19}% 
+\contentsline {subsubsection}{Word2Vec}{19}{section*.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{fastText}{19}% 
+\contentsline {subsubsection}{GLoVe}{20}{section*.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Training}{20}% 
+\contentsline {subsubsection}{fastText}{21}{section*.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Loss functions}{20}% 
+\contentsline {section}{\numberline {3.2}Training}{21}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Binary cross entropy loss}{20}% 
+\contentsline {subsection}{\numberline {3.2.1}Loss functions}{22}{subsection.3.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Categorical cross-entropy loss}{21}% 
+\contentsline {subsubsection}{Binary cross entropy loss}{22}{section*.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ranking losses}{22}% 
+\contentsline {subsubsection}{Categorical cross-entropy loss}{22}{section*.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Stochastic Gradient Descent}{22}% 
+\contentsline {subsubsection}{Ranking losses}{23}{section*.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Architectures}{23}% 
+\contentsline {subsection}{\numberline {3.2.2}Stochastic Gradient Descent}{24}{subsection.3.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Recurrent Neural Network}{23}% 
+\contentsline {section}{\numberline {3.3}Architectures}{25}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}LSTM}{25}% 
+\contentsline {subsection}{\numberline {3.3.1}Recurrent Neural Network}{25}{subsection.3.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Transformer}{27}% 
+\contentsline {subsection}{\numberline {3.3.2}LSTM}{27}{subsection.3.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.4}Other architectures}{31}% 
+\contentsline {subsection}{\numberline {3.3.3}Transformer}{28}{subsection.3.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Autoencoder}{31}% 
+\contentsline {subsection}{\numberline {3.3.4}Other architectures}{32}{subsection.3.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Convolutional Neural Network}{32}% 
+\contentsline {subsubsection}{Autoencoder}{32}{section*.11}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Modern models}{33}% 
+\contentsline {subsubsection}{Convolutional Neural Network}{33}{section*.12}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}ULMFiT}{33}% 
+\contentsline {section}{\numberline {3.4}Modern models}{34}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}BERT}{35}% 
+\contentsline {subsection}{\numberline {3.4.1}ULMFiT}{34}{subsection.3.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}ELECTRA}{36}% 
+\contentsline {subsection}{\numberline {3.4.2}BERT}{36}{subsection.3.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Medical report document classification}{38}% 
+\contentsline {subsection}{\numberline {3.4.3}ELECTRA}{37}{subsection.3.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Problem definition}{38}% 
+\contentsline {chapter}{\numberline {4}Medical report document classification}{39}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Data}{38}% 
+\contentsline {section}{\numberline {4.1}Problem definition}{39}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Medical reports}{38}% 
+\contentsline {section}{\numberline {4.2}Data}{40}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}General Finnish}{39}% 
+\contentsline {subsection}{\numberline {4.2.1}Medical reports}{40}{subsection.4.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Compute resources}{39}% 
+\contentsline {subsection}{\numberline {4.2.2}General Finnish}{40}{subsection.4.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}CSC}{40}% 
+\contentsline {section}{\numberline {4.3}Compute resources}{41}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Puhti}{40}% 
+\contentsline {subsection}{\numberline {4.3.1}CSC}{41}{subsection.4.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Slurm}{41}% 
+\contentsline {subsubsection}{Puhti}{41}{section*.13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}VSSHP Blackbird}{41}% 
+\contentsline {subsubsection}{Slurm}{42}{section*.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}Methods}{41}% 
+\contentsline {subsection}{\numberline {4.3.2}Turku University Hospital}{42}{subsection.4.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ULMFiT}{41}% 
+\contentsline {section}{\numberline {4.4}Methods}{43}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ELECTRA}{42}% 
+\contentsline {subsubsection}{ULMFiT}{43}{section*.15}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BERT}{42}% 
+\contentsline {subsubsection}{ELECTRA}{43}{section*.16}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{fastText}{42}% 
+\contentsline {subsubsection}{BERT}{43}{section*.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Results}{43}% 
+\contentsline {subsubsection}{fastText}{44}{section*.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Discussion}{44}% 
+\contentsline {section}{\numberline {4.5}Results}{44}{section.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{45}% 
+\contentsline {subsection}{\numberline {4.5.1}Tools}{45}{subsection.4.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{46}% 
+\contentsline {section}{\numberline {4.6}Discussion}{46}{section.4.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusion}{48}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{References}{50}{chapter*.19}% 
 \babel@toc {english}{}

@@ -36,8 +36,8 @@
       \strng{authorbibnamehash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
       \strng{authornamehash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
       \strng{authorfullhash}{33b00f3e2f4f1bb310f1cf8d4a4c500a}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1947-4040}
@@ -71,8 +71,8 @@
       \strng{authorbibnamehash}{7caeb63ea6a1e3558e6f9d46f7f11450}
       \strng{authornamehash}{7caeb63ea6a1e3558e6f9d46f7f11450}
       \strng{authorfullhash}{7caeb63ea6a1e3558e6f9d46f7f11450}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24\% on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100x more data. We open-source our pretrained models and code.}
@@ -119,8 +119,8 @@
       \strng{authorbibnamehash}{7f7e632c405feed1b5caeb0c7b305d82}
       \strng{authornamehash}{944b804f8fedee2cb0fb1b07f55ba209}
       \strng{authorfullhash}{7f7e632c405feed1b5caeb0c7b305d82}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper explores a simple and efficient baseline for text classification. Our experiments show that our fast text classifier fastText is often on par with deep learning classifiers in terms of accuracy, and many orders of magnitude faster for training and evaluation. We can train fastText on more than one billion words in less than ten minutes using a standard multicore\textasciitilde{}CPU, and classify half a million sentences among\textasciitilde{}312K classes in less than a minute.}
@@ -170,8 +170,8 @@
       \strng{authorbibnamehash}{284c76932020b70f105b22f86afb0032}
       \strng{authornamehash}{06bca4ff5af75cf80c926c30c8f40ec3}
       \strng{authorfullhash}{284c76932020b70f105b22f86afb0032}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The enormous amount of information stored in unstructured texts cannot simply be used for further processing by computers, which typically handle text as simple sequences of character strings. Therefore, specific (pre-)processing methods and algorithms are required in order to extract useful patterns. Text mining refers generally to the process of extracting interesting information and knowledge from unstructured text. In this article, we discuss text mining as a young and interdisciplinary field in the intersection of the related areas information retrieval, machine learning, statistics, computational linguistics and especially data mining. We describe the main analysis tasks preprocessing, classification, clustering, information extraction and visualization. In addition, we briefly discuss a number of successful applications of text mining.}
@@ -199,8 +199,8 @@
       \strng{authorbibnamehash}{702180e4afc7fef6f2f45cd761a12c1f}
       \strng{authornamehash}{702180e4afc7fef6f2f45cd761a12c1f}
       \strng{authorfullhash}{702180e4afc7fef6f2f45cd761a12c1f}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0360-0300}
@@ -559,8 +559,8 @@
       \strng{authorbibnamehash}{9f3b7f923892b8d1cb38f9dc0611137e}
       \strng{authornamehash}{9f3b7f923892b8d1cb38f9dc0611137e}
       \strng{authorfullhash}{9f3b7f923892b8d1cb38f9dc0611137e}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Multilayer Perceptron, Fuzzy Sets, Classifiaction}
@@ -813,8 +813,8 @@
       \strng{authorbibnamehash}{077003808bf2e10b988df0fc99931a19}
       \strng{authornamehash}{077003808bf2e10b988df0fc99931a19}
       \strng{authorfullhash}{077003808bf2e10b988df0fc99931a19}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({{EMNLP}})}
@@ -1163,8 +1163,8 @@
       \strng{authorbibnamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authornamehash}{c6c75bd00ce5a488e91a749d8383b3df}
       \strng{authorfullhash}{c6c75bd00ce5a488e91a749d8383b3df}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1476-4687}
@@ -1495,8 +1495,8 @@
       \strng{authorbibnamehash}{42c4b52dc3a62cebabbc11c73e1afb53}
       \strng{authornamehash}{3733dbdff90171390240438fddfbc952}
       \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the {{IEEE}} Conference on Computer Vision and Pattern Recognition}
@@ -1651,8 +1651,8 @@
       \strng{authorbibnamehash}{ecc84070e96f8be149f67682afc54e68}
       \strng{authornamehash}{ecc84070e96f8be149f67682afc54e68}
       \strng{authorfullhash}{ecc84070e96f8be149f67682afc54e68}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present two approaches that use unlabeled data to improve sequence learning with recurrent networks. The first approach is to predict what comes next in a sequence, which is a conventional language model in natural language processing. The second approach is to use a sequence autoencoder, which reads the input sequence into a vector and predicts the input sequence again. These two algorithms can be used as a "pretraining" step for a later supervised sequence learning algorithm. In other words, the parameters obtained from the unsupervised step can be used as a starting point for other supervised training models. In our experiments, we find that long short term memory recurrent networks after being pretrained with the two approaches are more stable and generalize better. With pretraining, we are able to train long short term memory recurrent networks up to a few hundred timesteps, thereby achieving strong performance in many text classification tasks, such as IMDB, DBpedia and 20 Newsgroups.}
@@ -1910,8 +1910,8 @@
       \strng{authorbibnamehash}{1616e28b53907ac54d37f9dc941586bf}
       \strng{authornamehash}{1bc1d7c11199786581719ddffc86a4d8}
       \strng{authorfullhash}{1616e28b53907ac54d37f9dc941586bf}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2003.10555}
@@ -2045,8 +2045,8 @@
       \endverb
     \endentry
     \entry{zotero-182}{misc}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://jupyter-notebook.readthedocs.io/en/stable/}
       \field{title}{The {{Jupyter Notebook}} —{} {{Jupyter Notebook}} 6.0.3 Documentation}
@@ -2063,6 +2063,90 @@
       \verb{file}
       \verb /Users/tuomas/Zotero/storage/8QJMVLET/tunneling.html
       \endverb
+    \endentry
+    \entry{wolf2020}{article}{}
+      \name{author}{11}{}{%
+        {{hash=c34c67badfd5b3624027e9c8c77a69f6}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4996c576ebaf91c8655cee3341764e3b}{%
+           family={Debut},
+           familyi={D\bibinitperiod},
+           given={Lysandre},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b17a6e4a2e8a51a0d77017d50c2ef700}{%
+           family={Sanh},
+           familyi={S\bibinitperiod},
+           given={Victor},
+           giveni={V\bibinitperiod}}}%
+        {{hash=79bf176bccb31f7489fcf1895b225764}{%
+           family={Chaumond},
+           familyi={C\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e62b33de0b0f2c7b4ac5e9dc6b77b754}{%
+           family={Delangue},
+           familyi={D\bibinitperiod},
+           given={Clement},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a106785413050c01a6a0ac6f0abef459}{%
+           family={Moi},
+           familyi={M\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d37a5a08104030cc7da7f707c8cca77f}{%
+           family={Cistac},
+           familyi={C\bibinitperiod},
+           given={Pierric},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bc8b8c6f2d75eb26cbbd360ec7400fd5}{%
+           family={Rault},
+           familyi={R\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e76b5af702e0b98b096e1808e1e43512}{%
+           family={Louf},
+           familyi={L\bibinitperiod},
+           given={R{é}mi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=91d34245e8eaf3e4cb599b6cb1c7b6aa}{%
+           family={Funtowicz},
+           familyi={F\bibinitperiod},
+           given={Morgan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8c2b3faf45b5c87f106605d20f022e94}{%
+           family={Brew},
+           familyi={B\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{973f8af808cddb3d52e4c8aa6d77bc8f}
+      \strng{fullhash}{a5c297f72c4f702876935451a9277222}
+      \strng{bibnamehash}{a5c297f72c4f702876935451a9277222}
+      \strng{authorbibnamehash}{a5c297f72c4f702876935451a9277222}
+      \strng{authornamehash}{973f8af808cddb3d52e4c8aa6d77bc8f}
+      \strng{authorfullhash}{a5c297f72c4f702876935451a9277222}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Recent advances in modern Natural Language Processing (NLP) research have been dominated by the combination of Transfer Learning methods with large-scale language models, in particular based on the Transformer architecture. With them came a paradigm shift in NLP with the starting point for training a model on a downstream task moving from a blank specific model to a general-purpose pretrained architecture. Still, creating these general-purpose models remains an expensive and time-consuming process restricting the use of these methods to a small sub-set of the wider NLP community. In this paper, we present HuggingFace's Transformers library, a library for state-of-the-art NLP, making these developments available to the community by gathering state-of-the-art general-purpose pretrained models under a unified API together with an ecosystem of libraries, examples, tutorials and scripts targeting many downstream NLP tasks. HuggingFace's Transformers library features carefully crafted model implementations and high-performance pretrained weights for two main deep learning frameworks, PyTorch and TensorFlow, while supporting all the necessary tools to analyze, evaluate and use these models in downstream tasks such as text/token classification, questions answering and language generation among others. The library has gained significant organic traction and adoption among both the researcher and practitioner communities. We are committed at HuggingFace to pursue the efforts to develop this toolkit with the ambition of creating the standard library for building NLP systems. HuggingFace's Transformers library is available at \textbackslash{}url\{https://github.com/huggingface/transformers\}.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{arXiv:1910.03771 [cs]}
+      \field{month}{2}
+      \field{shorttitle}{{{HuggingFace}}'s {{Transformers}}}
+      \field{title}{{{HuggingFace}}'s {{Transformers}}: {{State}}-of-the-Art {{Natural Language Processing}}}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 1910.03771
+      \endverb
+      \verb{file}
+      \verb /Users/tuomas/Zotero/storage/L7THJ4JA/Wolf et al_2020_HuggingFace's Transformers.pdf;/Users/tuomas/Zotero/storage/5JXFI7MW/1910.html
+      \endverb
+      \keyw{Computer Science - Computation and Language}
     \endentry
   \enddatalist
 \endrefsection
