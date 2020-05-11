@@ -1613,8 +1613,8 @@
       \strng{authorbibnamehash}{f1d6646e5e0eaa707df345cc93fbda25}
       \strng{authornamehash}{f1d6646e5e0eaa707df345cc93fbda25}
       \strng{authorfullhash}{f1d6646e5e0eaa707df345cc93fbda25}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The ability to accurately represent sentences is central to language understanding. We describe a convolutional architecture dubbed the Dynamic Convolutional Neural Network (DCNN) that we adopt for the semantic modelling of sentences. The network uses Dynamic k-Max Pooling, a global pooling operation over linear sequences. The network handles input sentences of varying length and induces a feature graph over the sentence that is capable of explicitly capturing short and long-range relations. The network does not rely on a parse tree and is easily applicable to any language. We test the DCNN in four experiments: small scale binary and multi-class sentiment prediction, six-way question classification and Twitter sentiment prediction by distant supervision. The network achieves excellent performance in the first three tasks and a greater than 25\% error reduction in the last task with respect to the strongest baseline.}
@@ -2034,8 +2034,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://www.gnu.org/software/screen/}
       \field{note}{Library Catalog: www.gnu.org}

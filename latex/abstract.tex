@@ -1,13 +1,13 @@
 \keywords{syväoppiminen, tekstinluokittelu, lääketieteellinen data}
 \begin{abstract}
-Tekstipohjaista tietoa tuotetaan vuosi vuodelta enemmän, mikä puolestaan on lisännyt tarvetta automaattiselle tekstinkäsittelylle.
+Tekstipohjaista tietoa tuotetaan vuosi vuodelta enemmän mikä puolestaan on lisännyt tarvetta automaattiselle tekstinkäsittelylle.
 Täten myös automaattisia tekniikoita luonnollisen kielen käsittelyyn on enenevissä määrin tutkittu ja kehitetty, erityisesti viimeisen vuosikymmenen aikana.
 Tämä on johtanut huomattaviin parannuksiin erilaisissa luonnollisen kielen käsittelytehtävissä.
-Suuri läpimurto on ollut valtavilla tietomäärillä koulutettujen syvien hermoverkkojen käyttäminen.
-Tällaisten menetelmien käyttö alueilla, joilla aika on arvokasta, kuten lääketiede, voisi tarjota huomattavaa lisäarvoa.
+Suuri läpimurto on ollut valtavilla tietomäärillä koulutettujen syvien neuroverkkojen käyttäminen.
+Tällaisten menetelmien käyttö alueilla joilla aika on arvokasta, kuten lääketiede, voisi tarjota huomattavaa lisäarvoa.
 
-Tässä tutkielmassa annetaan yleiskuva luonnollisesta kielenkäsittelystä syväoppimiseen ja tekstinluokitteluun liittyen.
-Lisäksi erilaisten syväoppivien menetelmien käytettävyys arvioitiin kouluttamalla tekstiluokittelijoita ennustamaan lääketieteellisten dokumenttien diagnoosikoodeja.
+Tämä tutkielma antaa yleiskuvan luonnollisen kielen käsittelystä keskittyen syväoppimiseen ja tekstinluokitteluun.
+Lisäksi erilaisten syväoppivien menetelmien käytettävyyttä arvioitiin kouluttamalla tekstiluokittelijoita ennustamaan suomenkielisten lääketieteellisten dokumenttien diagnoosikoodeja.
 Valittuihin menetelmiin kuuluvat syväoppimiseen perustuvat FinBERT, ULMFiT ja ELECTRA, sekä yksinkertaisempi lineaarinen luokittelija fastText.
 
 Tulokset osoittavat, että rajallisella aineistolla lineaariset menetelmät, kuten fastText, toimivat yllättävän hyvin.
@@ -19,15 +19,15 @@ Täten jatkotutkimusta syväoppiviin menetelmiin liittyen tarvitaan.
 \begin{abstracten}
 Text-based data is produced at an ever growing rate each year which has in turn increased the need for automatic text processing.
 Thus, to keep up with the amount of data, automatic natural language processing techniques have also been increasingly researched and developed, especially in the last decade or so.
-This has lead to substantial improvements in various natural language processing tasks.
+This has lead to substantial improvements in various natural language processing tasks such as classification, translation and information retrieval.
 A major breakthrough has been the utilization of deep neural networks and massive amounts of data to train them.
 Using such methods in areas where time is valuable, such as the medical field, could provide considerable value.
 
 In this thesis, an overview is given of natural language processing w.r.t deep learning and text classification.
-Additionally, a dataset of medical reports was preprocessed and used to train and evaluate a number of text classifiers in order to define the feasibility of such methods for medical text classification.
+Additionally, a dataset of medical reports in Finnish was preprocessed and used to train and evaluate a number of text classifiers for diagnosis code prediction in order to define the feasibility of such methods for medical text classification.
 The chosen methods include deep learning -based FinBERT, ULMFiT and ELECTRA, and a simpler linear baseline classifier, fastText.
 
 The results show that with a limited dataset, linear methods like fastText work surprisingly well.
 Deep learning -based methods, on the other hand, seem work reasonably well, and show a lot of potential especially in utilizing larger amounts of training data.
-In order to define the full potential of such methods, further investigation is required with larger datasets.
+In order to define the full potential of such methods, further investigation is required with different datasets and classification tasks.
 \end{abstracten}

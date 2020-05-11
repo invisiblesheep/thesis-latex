@@ -1,0 +1,18 @@
+\nomenclatureentry{aNLP@[{NLP}]\begingroup Natural language processing\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aBoW@[{BoW}]\begingroup Bag of words\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aTF-IDF@[{TF-IDF}]\begingroup Term frequency - inverse document frequency\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aNMT@[{NMT}]\begingroup Neural machine translation\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{akNN@[{kNN}]\begingroup k-nearest neighbor classifier\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aSVM@[{SVM}]\begingroup Support vector machine\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aSVC@[{SVC}]\begingroup Support vector clustering\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aGLoVe@[{GLoVe}]\begingroup Global Vectors for Word Representation \nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aSGD@[{SGD}]\begingroup Stochastic gradient descent \nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aRNN@[{RNN}]\begingroup Recurrent Neural Networks \nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{abptt@[{bptt}]\begingroup Backpropagation through time\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aLSTM@[{LSTM}]\begingroup Long short-term memory \nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aGRU@[{GRU}]\begingroup Gated Recurrent Unit\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aCNN@[{CNN}]\begingroup Convolutional Neural Networks \nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aULMFiT@[{ULMFiT}]\begingroup Universal Language Model fine-tuning \nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aBERT@[{BERT}]\begingroup Bidirectional Encoder Representations from Transformers \nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aMLM@[{MLM}]\begingroup Masked language model\nomeqref {0}|nompageref}{iii}
+\nomenclatureentry{aNSP@[{NSP}]\begingroup Next sentence prediction\nomeqref {0}|nompageref}{iii}

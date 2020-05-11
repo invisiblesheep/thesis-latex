@@ -2,8 +2,14 @@
 
 \section{Problem definition} \label{Problem definition}
 
-Automatically tagging a medical document with a proper diagnosis code was deemed valuable from the hospital's side.
-To find out if this would be possible, a couple of deep learning -based approaches were chosen to be trained on medical data.
+Doctors diagnose multiple patients each day from which a medical report is written and stored in a database.
+The report usually consists of a written statement regarding the patient and the visit, and an according diagnosis code.
+As doctors are overworked and short on time, this step is usually done in a hurry which increases the chance of human error in both the written text and assigned diagnosis code.
+Thus, automatically defining a proper diagnosis code based on the written text would reduce the chance of making an error and save some time on the doctors part.
+Additionally, such methods could be used to analyze past data in order to validate the correctness of already given diagnosis labels.
+
+
+To find out if it would be possible to automatically define the diagnosis of texts to a high enough certainty, a couple of deep learning -based models were trained on a binary classification task where the model was to predict whether a given text should have a certain knee-related diagnosis code or not.
 Since compute resources were a major constraint, only approaches with a reasonable single-gpu training time were considered.
 Thus, a pretrained and finetuned ULMFiT and ELECTRA, and a finetuned FinBERT (pretrained by Virtanen et al.~\cite{virtanen2019}), were chosen for comparison.
 In addition to comparing the different models with each other, each model --- excluding FinBERT, which provided a vocabulary of it's own from pretraining --- was trained multiple times with different sizes of a vocabulary which was extracted from the medical texts to see if vocabulary size meaningfully impacted the results.
@@ -88,13 +94,15 @@ For finetuning FinBERT, HuggingFace's transformers library was ultimately used \
 It provides pretraining and finetuning scripts for a multitude of transformer-based models, such as BERT, XLNet and RoBERTa.
 % The code for finetuning FinBERT was taken from the official BERT github repository\footnote{https://github.com/google-research/bert}, and FinBERT itself can be found from\footnote{https://github.com/TurkuNLP/FinBERT}.
 
-\subsubsection{fastText}\label{fastText}
-fastText\footnote{https://github.com/facebookresearch/fastText} was trained as a baseline model.
+\subsubsection{Baseline models}\label{Baseline models}
+\textbf{fastText}\footnote{https://github.com/facebookresearch/fastText} was trained as a baseline model.
 In addition to providing word embeddings, fastText can be used as a classifier as well.
 fastText obtains document vectors by averaging word embeddings after which it uses multinomial logistic regression for classification.
 As with most neural network classifiers, a probability distribution over classes is gained as a result after applying the softmax function to the results.
 It uses a bunch of tricks, such as hierarchical softmax, to up the speed of training the model.
 Thus it's an order of magnitude faster to train than a deep learning model but it still is somewhat competitive with one.
+
+In addition to fastText, the results of a random classifier averaged over four runs and a majority predictor, which always predicts negative in this case, are also reported as a baseline.
 
 \section{Results}\label{Results}
 A binary classifier was built to identify texts that had one of two knee-related diagnosis codes from the training data.
@@ -102,17 +110,19 @@ The data was divided into training, validation and test sets with a 80--10--10 s
 
 \begin{table}[t]
 \begin{center}
-\begin{tabular}{lccc}
-         & Precision & Recall & F1 \\
+\begin{tabular}{lcccc}
+         & Accuracy & Precision & Recall & F1 \\
         \hline
-FinBERT &      68.02   &    74.16 &  70.96   \\
-ELECTRA-30K    &     66.06 & 73.72 & 69.68 \\
-ELECTRA-50K  &      69.29 & 76.19 & 72.58 \\
-ELECTRA-100K  &     69.64 & 76.14 & 72.74 \\
-ULMFiT-30K  &    84.28 & 72.54 & 77.97 \\
-ULMFiT-50K  &   82.91 & 75.41 & 78.98 \\
-ULMFiT-100K  &  83.95 & 75.17 & \textbf{79.32} \\
-fastText &  84.34 & 70.07 & 76.54 \\
+FinBERT &   91.68 &   68.02   &    74.16 &  70.96   \\
+ELECTRA-30K    &  90.40 &   66.06 & 73.72 & 69.68 \\
+ELECTRA-50K  &   91.23 &   69.29 & 76.19 & 72.58 \\
+ELECTRA-100K  &  91.46 &   69.64 & 76.14 & 72.74 \\
+ULMFiT-30K  &  93.85 &  84.28 & 72.54 & 77.97 \\
+ULMFiT-50K  & 93.98 &  82.91 & 75.41 & 78.98 \\
+ULMFiT-100K  & 94.11 & 83.95 & 75.17 & \textbf{79.32} \\
+fastText &  93.49 & 84.34 & 70.07 & 76.54 \\
+Random &  50.02 & 15.01 & 50.19 & 23.11 \\
+Most common & 85.03 & N/A & 0 & N/A \\
 \end{tabular}
 \caption{Classification results of models with different vocabulary sizes on evaluation set.}
 \label{table:results}
@@ -147,6 +157,10 @@ These results should be taken with a grain of salt since the dataset wasn't quit
 It is suspected that a major factor for this lack of performance is due to the lack of a proper general medical text dataset that could be utilized in the pretraining of such models.
 Additionally, since these transformers have a maximum sequence length for input tokens which prohibits the utilization of all the tokens in longer texts, the lengthier documents --- which there were a lot of --- in the training set could not be fully utilized.
 Thus for FinBERT and ELECTRA, a major improvement came from increasing the maximum sequence length.
+
+
+An additional factor for FinBERT's poor performance could be that the vocabulary it uses is not specific to the finetuning task as it was trained on general Finnish.
+As such it does not include any of the medical text -related terms suspected to be important for classification, as opposed to the vocabularies of the other methods which were extracted from the training data.
 
 
 Given that the relevant text regarding the diagnosis of the document seemed to usually reside at the end of a document, encapsulating this information in the training samples for ELECTRA and BERT perhaps needs a different approach than chunking to maximum size in which the relevant information only appears in the later chunks of a document.

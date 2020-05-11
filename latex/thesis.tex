@@ -1,6 +1,29 @@
-\documentclass[a4paper,12pt,language=english,version=final,hidechapters=true,includereferences=false,realtimesnewroman=false,sharelatex=false,emptyfirstpages=true]{utuftthesis}
-% \setcounter{secnumdepth}{2}
+%% LyX 2.3.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[language=english,version=final,mainfont=times,sharelatex=false,hidechapters=false,countbibpages=false,emptyfirstpages=true]{utuftthesis}
+\setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
+\usepackage{float}
+\usepackage{nomencl}                % acronyms, https://tex.stackexchange.com/questions/154060/nomenclature-acronym-or-glossary
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand\textquotedblplain{%
+  \bgroup\addfontfeatures{Mapping=}\char34\egroup}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\providecommand{\algorithmname}{Algoritmi}
+\floatname{algorithm}{\protect\algorithmname}
+
+\@ifundefined{showcaptionsetup}{}{%
+ \PassOptionsToPackage{caption=false}{subfig}}
+\usepackage{subfig}
+\makeatother
+
+\renewcommand{\listingscaption}{Ohjelmalistaus}
 
 \addbibresource{Bibli_zotero.bib}
 \graphicspath{ {./images/} }
@@ -9,61 +32,10 @@
 Document template suitable for use as a LaTeX master-file for master's
 thesis in University of Turku Department of Future Technologies.\\
 \\
-Compatible with: ShareLaTeX / PDFLaTeX / XeLaTeX.\\
+Compatible with: ShareLaTeX, pdfLaTeX, LuaLaTeX, XeLaTeX, LyX, latexmk.
+The document class is described in utuftthesis.cls.\\
 \\
-\\
-{*}{*} HOW TO USE? {*}{*}\\
-\\
-Want to write a thesis? Clone this template in ShareLaTeX or fork
-the department's thesis git project.\\
-\\
-The utuftthesis.cls defines a new thesis class, which is based on
-the report class. It supports these new named parameters:
-
-- paper: a4paper
-
-- version: draft / final (default: draft) shows/hides {[}draft{]}
-in the header
-
-- language: finnish / english (default: finnish) affects the general
-document appearance and hyphenation
-
-- hidechapters: true / false (default: true) hides/shows the chapter/luku
-text at the beginning of each Chapter
-
-- includereferences: true / false (default: false) include reference
-pages when calculating the total number of pages
-
-- realtimesnewroman: true / false (default: false) use Times New Roman
-instead of LaTeX fonts with XeLaTeX. Requires the font to be installed
-on the system / provided in the document directory. Other fonts can
-be defined with \textbackslash setmainfont.
-
-- sharelatex: true / false (default: false) don't attempt to use (c)
-system fonts, instead read them from the project repository
-
-- emptyfirstpages: true / false (default: true) clear the headers/footers
-for the 1st pages of text chapters
-
-Traditionally the best places to learn (La)TeX are probably the manual
-pages for each package http://www.ctan.org/ and http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf.
-This new version (2.0) should be compatible with xelatex and biblatex
-which means that all source files can freely use normal UTF-8 text
-without resorting to \textquotedbl\textquotedbl legacy hacks\textquotedbl .\\
-\\
-Note that PDF/A requirements don't allow PDF links, but if you want
-to provide a user friendly version of the thesis with links, use \textbackslash hyperref\\
-\\
-\\
-{*}{*} Maintenance {*}{*}\\
-\\
-Workflow: https://gitlab.utu.fi/ttweb/thesis -> master .lyx document
-exported as .tex documents -> repository content dumped to the sharelatex
-project template
-
-Want to fix something in the template? Send a merge.\\
-\\
-Relies on utuftthesis.cls for the document class definitions.
+HOW TO USE? See https://gitlab.utu.fi/ttweb/thesis
 \end{comment}
 
 
@@ -71,13 +43,15 @@ Relies on utuftthesis.cls for the document class definitions.
 
 \pubmonth{5}
 
+\publab{Labran nimi}
+
 \publaben{Computer Science}
-% \publab{Tietojenkäsittelytiede}
 
 \pubtype{gradu}
 \title{Deep learning in medical document classification}
 \author{Tuomas Jokioja}
 \supervisors{Hans Moen,Filip Ginter}
+
 
 \maketitle
 \input{abstract.tex}
@@ -95,17 +69,50 @@ Relies on utuftthesis.cls for the document class definitions.
 % if you want a list of tables
 % \listoftables
 
-% 'list of acronyms'
-%   - you may not need this at all
-%   - create a chapter called List Of Acronyms (or whatever), which
-%     should contain all your acronym definitions, e.g.
-%     \chapter{List Of Acronyms}
+% if you want a list of acronyms
+\setcounter{secnumdepth}{-1}
+\makenomenclature
+\nomenclature{NLP}{Natural language processing}
+\nomenclature{BoW}{Bag of words}
+\nomenclature{TF-IDF}{Term frequency - inverse document frequency}
+\nomenclature{NMT}{Neural machine translation}
+\nomenclature{kNN}{k-nearest neighbor classifier}
+\nomenclature{SVM}{Support vector machine}
+\nomenclature{SVC}{Support vector clustering}
+\nomenclature{GLoVe}{Global Vectors for Word Representation }
+\nomenclature{SGD}{Stochastic gradient descent }
+\nomenclature{RNN}{Recurrent Neural Networks }
+\nomenclature{bptt}{Backpropagation through time}
+\nomenclature{LSTM}{Long short-term memory }
+\nomenclature{GRU}{Gated Recurrent Unit}
+\nomenclature{CNN}{Convolutional Neural Networks }
+\nomenclature{ULMFiT}{Universal Language Model fine-tuning }
+\nomenclature{BERT}{Bidirectional Encoder Representations from Transformers }
+\nomenclature{MLM}{Masked language model}
+\nomenclature{NSP}{Next sentence prediction}
+\printnomenclature
+% \listofacronyms
+
+% change the name if the default doesn't sound right
+\renewcommand{\algorithmname}{Ohjelmalistaus}% 'list of X'
+%   - it is also possible to define custom lists
+%     \chapter{List Of Xs}
 %   - the secnumdepth trickery is needed because acronyms are as a
 %     standard chapter and we are faking '\listofacronyms'
 %
-\setcounter{secnumdepth}{-1}
-\input{acronyms.tex}
+% \input{acronyms.tex}
 \setcounter{secnumdepth}{2}% setup page numbering, page counter, etc.%
+\begin{comment}
+The thesis starts here.
+
+To better organize things, create a new tex file for each chapter
+and input it below.
+
+Avoid using the å, ä, ö or <space> characters in referred names and
+underscores \_ in file names (may break hyperref).
+
+Good luck!
+\end{comment}
 
 \input{introduction.tex}
 \input{chapter_2.tex}
@@ -116,18 +123,63 @@ Relies on utuftthesis.cls for the document class definitions.
 %\input{file_name_of_chapter_x}
 %\input{file_name_of_chapter_y}
 
+\begin{comment}
+The thesis main content ends here.
+\end{comment}
 \printbibliography
 
-% \appchapter{Liitedokumentti}
+\begin{comment}
+Important! Create the appendix chapters with command \textbackslash appchapter\{some
+name\} instead of \textbackslash chapter\{some name\} for the automagic
+page counting to work!
+\end{comment}
 
-% Tässä esimerkki\pagebreak{}
 
-% kaksisivuisesta liitteestä.
+% % \appchapter{Liitedokumentti}
+
+% Liitteen ohjelmakoodi \ref{alg:Tyyppiluokka-Monad} kuvaa matemaattisen
+% monadirakenteen pohjalta rakentuvan Haskellin tyyppiluokan. Tyyppiluokan
+% voi nähdä eräänlaisena abstraktina ohjelmointirajapintana (API\nomenclature[API]{API}{Application Programming Interface}),
+% joka muodostaa ohjelmoijalle abstraktin ohjelmointikielen käyttöliittymän
+% (UI\nomenclature[UI]{UI}{User Interface}).
+
+% \begin{algorithm}[tbh]
+% \begin{minted}{haskell}
+% class Monad m where
+%     ( >>= )         :: m a -> (a -> m b) -> m b
+%     return          :: a                 -> m a
+
+%     fail            :: String            -> m a
+%     (>>)            :: m a -> m b        -> m b
+%     m >> k          =  m >>= \_ -> k       -- default
+
+% instance Monad IO where  ...               -- omitted
+% \end{minted}
+
+% \caption{Tyyppiluokka 'Monad'.\label{alg:Tyyppiluokka-Monad}}
+% \end{algorithm}
+
+% \newpage{}
+
+% Ensimmäisen liitteen toinen sivu. Ohjelmakoodi \ref{alg:Monadin-k=0000E4ytt=0000F6=0000E4.}
+% demonstroi vielä monadin käyttöä.
+
+% \begin{algorithm}[tbh]
+% \begin{minted}{haskell}
+% main =
+% return "Your name:" >>=
+% putStr >>=
+% \_ -> getLine >>=
+% \n -> putStrLn ("Hey " ++ n)
+% \end{minted}
+
+% \caption{Monadin käyttöä.\label{alg:Monadin-k=0000E4ytt=0000F6=0000E4.}}
+% \end{algorithm}
+
 
 % \appchapter{Liitedokumentti 2}
 
 % Tässä esimerkki\pagebreak{}
 
 % toisesta kaksisivuisesta liitteestä.
-
 \end{document}

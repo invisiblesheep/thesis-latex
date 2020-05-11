@@ -144,7 +144,7 @@ Thus a small dataset performs significantly worse when using a Naive Bayes Class
 Nearest neighbor classifiers select documents that are close to the target document instead of building an explicit model.
 The class of the document can then be inferred from the classes of the neighbouring documents.
 A classifier that selects the k closest documents is called a \textit{k-nearest neighbor classifier} (kNN).
-There are a lot of usable measures for similarity. One example would be to count the number of common words in documents.
+There are a lot of usable measures for similarity such as term frequencies or distributional information.
 
 When deciding if a document belongs to a class, the document has to be compared to all the document in the training set.
 Then the k most similar documents are selected and their classes define the probability of whether the document belongs to a certain class or not.
@@ -205,7 +205,7 @@ Neurons are not interconnected within a layer but are only connected to the neur
 In a text classifier neural network the prediction of the network can be determined from the values of the final layer's neurons.
 For example, a classifier with three different possible classes would have three neurons in the output layer, each corresponding to the probability of a single class \cite{pal1992}.
 
-Neural networks are usually trained using backpropagation which finetunes the parameters of the network by first feeding the network training data, checking the output and if it is misclassified, and then backtracking and updating the weights of the network to eliminate or minimize the error \cite{sebastiani2002}.
+Neural networks are usually trained using backpropagation which finetunes the parameters --- the weights and biases --- of the network by first feeding the network training data, checking the output and if it is misclassified, and then backtracking and updating the weights of the network to eliminate or minimize the error \cite{sebastiani2002}.
 
 \begin{figure}[t]
 \includegraphics[scale=0.8]{nn}

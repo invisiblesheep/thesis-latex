@@ -1,0 +1,23 @@
+
+\begin{thenomenclature} 
+\nomgroup{A}
+  \item [{BERT}]\begingroup Bidirectional Encoder Representations from Transformers \nomeqref {0}\nompageref{iii}
+  \item [{BoW}]\begingroup Bag of words\nomeqref {0}\nompageref{iii}
+  \item [{bptt}]\begingroup Backpropagation through time\nomeqref {0}\nompageref{iii}
+  \item [{CNN}]\begingroup Convolutional Neural Networks \nomeqref {0}\nompageref{iii}
+  \item [{GLoVe}]\begingroup Global Vectors for Word Representation \nomeqref {0}\nompageref{iii}
+  \item [{GRU}]\begingroup Gated Recurrent Unit\nomeqref {0}\nompageref{iii}
+  \item [{kNN}]\begingroup k-nearest neighbor classifier\nomeqref {0}\nompageref{iii}
+  \item [{LSTM}]\begingroup Long short-term memory \nomeqref {0}\nompageref{iii}
+  \item [{MLM}]\begingroup Masked language model\nomeqref {0}\nompageref{iii}
+  \item [{NLP}]\begingroup Natural language processing\nomeqref {0}\nompageref{iii}
+  \item [{NMT}]\begingroup Neural machine translation\nomeqref {0}\nompageref{iii}
+  \item [{NSP}]\begingroup Next sentence prediction\nomeqref {0}\nompageref{iii}
+  \item [{RNN}]\begingroup Recurrent Neural Networks \nomeqref {0}\nompageref{iii}
+  \item [{SGD}]\begingroup Stochastic gradient descent \nomeqref {0}\nompageref{iii}
+  \item [{SVC}]\begingroup Support vector clustering\nomeqref {0}\nompageref{iii}
+  \item [{SVM}]\begingroup Support vector machine\nomeqref {0}\nompageref{iii}
+  \item [{TF-IDF}]\begingroup Term frequency - inverse document frequency\nomeqref {0}\nompageref{iii}
+  \item [{ULMFiT}]\begingroup Universal Language Model fine-tuning \nomeqref {0}\nompageref{iii}
+
+\end{thenomenclature}

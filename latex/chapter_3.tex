@@ -1,17 +1,17 @@
 \chapter{Deep learning in natural language processing} \label{Deep learning in natural language processing}
 Deep learning is a branch of machine learning and a re-branded name for neural networks.
 All of machine learning can be defined as learning to predict the future based on past observations.
-In addition to learning to predict, deep learning also tries to correctly represent the data so that is is suitable for prediction.
+In addition to learning to predict, deep learning also tries to represent the data in such a form that it is suitable for prediction.
 Given a large amount of desired input-output mappings, deep learning feeds the data into a network that successively transforms the data until a final transformation predicts the output.
 The transformations are learned from the mappings such that each successive transformation makes it easier to relate the data to the given label.
-After a human designer defines the architecture and training regime of the network, gathers and preprocesses a proper set of input-output examples and encodes the data, the network can automatically learn the how to best produce this mapping \cite{goldberg2017}.
+After a human designer defines the architecture and training regime of the network, gathers and preprocesses a proper set of input-output examples and encodes the data, the network can automatically learn how to best produce this mapping \cite{goldberg2017}.
 
 This chapter gives an overview of transfer learning in section \ref{Transfer learning}, delves deeper into how a deep learning model is trained in section \ref{Training}, provides an overview of different relevant architectures in section \ref{Architectures} and finally describes the methodology of three modern machine learning models: ULMFit, BERT and ELECTRA, in section \ref{Modern models}.
 
 \section{Transfer learning} \label{Transfer learning}
 Transfer learning refers to the ability of a system to reuse knowledge learned in a previous task in a task of new or novel domain that shares some commonality with the previous task \cite{yang2020}.
 Often the motivation for using transfer learning comes from a lack of labelled training data for a specific task.
-In natural language processing it is widely used to first teach a model on a general language corpus, so that it learns the generalities of the given language (a \textit{language model}), and then fine-tuning the model on some downstream task, such as classification.
+In natural language processing it is widely used to first train a model on a general domain corpus of fully or partly unlabelled data, so that it learns the generalities of the given language (a \textit{language model}), and then fine-tuning the model on some downstream task, such as classification.
 
 All of the introduced NLP-models later in this chapter use transfer learning as each has a clear distinction between the pre-training and fine-tuning phases in model training where another model's pre-trained state can be transferred to another task and fine-tuned further for that task.
 
@@ -37,7 +37,9 @@ Pre-trained language models can thus be used as a starting point for a model, tr
 \subsection{Embeddings} \label{Embeddings}
 A common use case of transfer learning in NLP has been to use word embeddings that encode some information about a word in relation to other words in the feature space.
 Using embeddings is a general way of transferring knowledge as it doesn't depend on any specific model architecture but only on the language used.
-The most popular methods for generating vector representations for words have been Word2Vec \cite{mikolov2013}, GLoVe \cite{pennington2014}, and fastText \cite{bojanowski2017}, all of which will be presented in the next sections.
+The most popular methods for generating vector representations for words have been Word2Vec \cite{mikolov2013}, GLoVe \cite{pennington2014}, and fastText \cite{bojanowski2017}.
+% All of these methods can be seen as relying on the 'distributional hypothesis' as a heuristic applied for learning semantic similarities between words \cite{harris1954}.
+The following subsections give an overview on these methods.
 
 \subsubsection{Word2Vec} \label{Word2Vec}
 Word2Vec is an open-source project based on the work by Mikolov et al. that can be used to train distributed representations of words and phrases \cite{mikolov2013}.
@@ -262,8 +264,8 @@ Each layer consists of two sub-layers; a multi-head self-attention mechanism and
 Residual connections \cite{he2016} are used around each sub-layer to shortcut the sub-layers while training.
 This leads to faster training times and a more robust model as the connections are gradually restored during training.
 Finally, layer normalization is applied to the output of the sub-layer as $LayerNorm(x+Sublayer(x))$, where $Sublayer(x)$ refers to the function implemented by the sub-layer.
-Due to the residual connections, all sub-layers and embedding layers have to produce outputs of the same dimension.
-Thus in the Transformer the dimension is defined as $d_{model}=512$.
+Due to the residual connections, all sub-layers and embedding layers have to produce outputs of the same dimensionality.
+Thus in the Transformer the dimensionality is defined as $d_{model}=512$.
 
 The decoder is also composed of six identical layers but additionally includes a third sub-layer, which applies multi-head attention over the output of the encoder stack.
 The self-attention sub-layer in the decoder stack is also modified to prevent positions from attending to subsequent positions.
@@ -374,7 +376,7 @@ Gradual unfreezing is used to prevent \textit{catastrophic forgetting} by unfree
 Unfrozen layers are fine-tuned for one epoch after which the next layer is unfrozen until all the layers of the model have been unfrozen.
 The whole model is then fine-tuned until convergence \cite{howard2018}.
 
-Although outshined by BERT and other huge transformer-based models, ULMFiT is much fast to train and doesn't require a lot of data to get good results.
+Although outshined by BERT and other huge transformer-based models, ULMFiT is much fast to train and typically does not require a lot of data to get good results.
 
 
 
@@ -398,7 +400,7 @@ In MLM, 15\% of all WordPiece tokens are randomly chosen and each chosen token h
 The reason for not always masking the chosen tokens is because the [MASK] token does not appear during fine-tuning, causing a mismatch between the two steps otherwise.
 
 In NSP, training examples consist of two sentences $A$ and $B$.
-50\% of the time $B$ is actually the next sentence that follows $A$ (label $IsNext$) and 50\% of the time its a random sentence from the corpus (label $NotNext$).
+50\% of the time $B$ is actually the next sentence that follows $A$ (label $IsNext$) and 50\% of the time it is a random sentence from the corpus (label $NotNext$).
 
 With the use of the Transformer-architecture, WordPiece embeddings and two pre-training objectives that allow bidirectional context, BERT was able to exceed the state-of-the-art on multiple downstream tasks \cite{devlin2019}.
 
@@ -406,7 +408,7 @@ With the use of the Transformer-architecture, WordPiece embeddings and two pre-t
 Efficiently Learning an Encoder that Classifies Token Replacements Accurately (ELECTRA) is a further elaboration on the BERT model by Clark, et al. \cite{clark2020}
 The primary motivation for ELECTRA is making pre-training more efficient given that training a full-sized BERT or any derivation of it (ALBERT, RoBERTa etc.) requires a considerable amount of compute and training data.
 As described in the BERT chapter (chapter \ref{BERT}), BERT uses masked language modeling as a pre-training objective.
-This MLM is inherently quite inefficient in it's usage of the training data; only the masked tokens, approximately 15\% of the data, needs to be predicted.
+This MLM is inherently quite inefficient in its usage of the training data; only the masked tokens, approximately 15\% of the data, needs to be predicted.
 As an alternative, ELECTRA proposes \textit{replaces token detection}, a pre-training task in which the model has to predict whether or not a token is the original token in the corpus or if it has been swapped for a token generated by a small masked language model.
 This also solves the mismatch in BERT where the model sees [MASK] tokens during pre-training but not during fine-tuning.
 ELECTRA trains the network as a discriminator rather than a generator, since it is predicting whether an input is corrupted or not.
